@@ -25,7 +25,17 @@ module.exports = {
       silver: "#ecebff",
       bubbleGum: "#ff77e9",
       bermuda: "#78dcca",
-      footer:'#c17f4c'
+      footer:'#c17f4c',
+      // ألوان الوضع الداكن
+      darkPrimaryColor: "#1e1e1e", // 
+      darkSecondryColor: "#3a3a3a", // 
+      darkTitelCard: "#2d365d", // 
+      darkShadowCard: "#6a3a2b", // 
+      darkFontHero: "#f1f1f1", // 
+      darkGray: "#9a9a9a", // 
+      darkBlack: "#121212", // 
+      darkPurple: "#4b4d96", // 
+      darkTahiti: "#1a889e", // 
     },
     screens: {
       xs: "350px",
@@ -39,9 +49,9 @@ module.exports = {
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
-        darkPrimary: "#1e1e1e", 
-        darkSecondary: "#3a3a3a",
-        darkText: "#f1f1f1",
+        darkPrimary: "#1e1e1e", // 
+        darkSecondary: "#3a3a3a", // 
+        darkText: "#f1f1f1", // 
       },
     },
   },

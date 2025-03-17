@@ -56,7 +56,8 @@ export default function Home() {
   };
 
   return (
-    <div className="h-screen bg-gradient-to-br from-[#2E2E2E] to-fontHero font-[Poppins]">
+    <div className="h-screen bg-gradient-to-br from-[#2E2E2E] dark:from-[#8c5c3e] to-fontHero font-[Poppins]
+">
       {splash === false ? (
         <>
           <div className="flex flex-col items-center justify-center h-screen">
@@ -89,7 +90,7 @@ export default function Home() {
             </button>
           </div>
           <div
-            className={` cursor-pointer w-8 h-8 right-1 bg-titelCard flex items-center fixed bottom-24 justify-center rounded-lg shadow-lg text-white ${
+            className={` cursor-pointer w-8 h-8 right-1 bg-titelCard dark:bg-white dark:text-darkPrimaryColor flex items-center fixed bottom-24 justify-center rounded-lg shadow-lg text-white ${
               showNav ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
             }`}
           >
@@ -100,7 +101,7 @@ export default function Home() {
               showNav ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
             }`}
           >
-            <div className="flex items-center gap-4 px-4  bg-white shadow-lg rounded-full p-1 border border-white/10">
+            <div className="flex items-center gap-4 px-4 dark:bg-darkPrimary  bg-white shadow-lg rounded-full p-1 border border-white/10">
               {tabs.map((tab) => (
                 <div
                   key={tab.id}
@@ -111,20 +112,20 @@ export default function Home() {
                   className={`p-3 rounded-full cursor-pointer transition-all ${
                     activeTab === tab.id
                       ? "bg-secondryColor text-white shadow-md"
-                      : "text-gray hover:text-shadowCard"
+                      : "text-gray dark:text-white  hover:text-shadowCard"
                   }`}
                 >
-                  <a href="#title"> {tab.icon}</a>
+                  <a href="#title " className="dark:bg-white"> {tab.icon}</a>
                 </div>
               ))}
             </div>
           </div>
           <div className="">
-            <h1 className="px-6 pt-10 font-bold text-3xl text-gray flex items-center gap-2">
-              <div className="text-titelCard">
+            <h1 className="px-6 pt-10 font-bold text-3xl dark:text-white text-gray flex items-center gap-2">
+              <div className="text-titelCard dark:text-white">
                 {tabs.find((tab) => tab.id === activeTab)?.title}
               </div>
-              <div className="text-shadowCard pb-1">
+              <div className="text-shadowCard pb-1 dark:text-white">
                 {tabs.find((tab) => tab.id === activeTab)?.icon}
               </div>
             </h1>

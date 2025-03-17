@@ -1,28 +1,48 @@
 "use client";
+
+import { useEffect, useState } from "react";
 import { FiCoffee } from "react-icons/fi";
 import { MdOutlineDarkMode, MdOutlineLightMode } from "react-icons/md";
-// import { useTheme } from "next-themes";
-import { useEffect, useState } from "react";
 
 export default function Header() {
-  // const { theme, setTheme } = useTheme();
-  const [mounted, setMounted] = useState(false);
-// console.log(theme);
+  const [theme, setTheme] = useState<"light" | "dark">("light");
 
   useEffect(() => {
-    setMounted(true);
-  }, []);
+    const storedTheme = localStorage.getItem("theme") as "light" | "dark" | null;
+    if (storedTheme) {
+      setTheme(storedTheme);
+    } else {
+      localStorage.setItem("theme", "light");
+    }
+  }, []); 
 
-  if (!mounted) return null; 
+  const toggleTheme = () => {
+    const newTheme = theme === "dark" ? "light" : "dark";
+    setTheme(newTheme);
+    localStorage.setItem("theme", newTheme);
+  };
+
+  useEffect(() => {
+    if (theme === "dark") {
+      document.documentElement.classList.add("dark");
+    } else {
+      document.documentElement.classList.remove("dark");
+    }
+  }, [theme]); 
 
   return (
-    <header className=" px-28 bg-primaryColor font-[Poppins] dark:bg-darkPrimary flex fixed z-20 flex-row items-center justify-between xs:px-4 h-20 w-full p-2">
-      <div className="px-5 cursor-pointer" >
-       
-          <MdOutlineDarkMode size={22} className="text-fontHero" />
-        
+    <header className="px-28 bg-primaryColor font-[Poppins] flex fixed z-20 flex-row items-center justify-between xs:px-4 h-20 w-full p-2 dark:bg-darkPrimary dark:text-darkText">
+      {/* زر تبديل الوضع */}
+      <div className="px-5 cursor-pointer" onClick={toggleTheme}>
+        {theme === "dark" ? (
+          <MdOutlineLightMode size={22} className="text-fontHero dark:text-white" />
+        ) : (
+          <MdOutlineDarkMode size={22} className="text-fontHero dark:text-white" />
+        )}
       </div>
-      <div className="px-5 flex flex-row justify-start items-center text-fontHero">
+
+      {/* لوجو التطبيق */}
+      <div className="px-5 flex flex-row justify-start items-center text-fontHero dark:text-white">
         <FiCoffee size={18} />
         <div className="px-1 text-lg">Mr.Coffee</div>
       </div>

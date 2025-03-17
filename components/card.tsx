@@ -36,55 +36,55 @@ export default function Home(props: CardProps) {
       <>
         {e.categorie === categorie ? (
           <div
-            className="bg-back h-full w-72 py-2 shadow-xl shadow-shadowCard rounded-2xl transition ease-in-out delay-150  duration-300 font-[Poppins] "
+            className="bg-back h-full w-72 py-2 shadow-xl shadow-shadowCard rounded-2xl transition ease-in-out delay-150  duration-300 font-[Poppins] dark:bg-darkPrimary dark:text-darkFontHero"
             key={i}
           >
             <Image
               src={e.product.src}
-              className="h-72 py-0  p-2 rounded-2xl object-fill"
+              className="h-72 py-0 p-2 rounded-2xl object-fill"
               width={300}
               height={50}
               alt={e.title}
             />
-            <div className="flex justify-between  flex-col flex-1 flex-grow-1">
-              <div className="px-6 py-2  text-2xl font-bold text-titelCard flex-1">{e.title}</div>
-              <div className="px-6  flex align flex-1  text-lg text-gray ">
-                {e.price}<div className='text-shadowCard px-1 flex '>ل.س</div>
+            <div className="flex justify-between flex-col flex-1 flex-grow-1">
+              <div className="px-6 py-2 text-2xl font-bold text-titelCard flex-1 dark:text-darkText">{e.title}</div>
+              <div className="px-6 flex align flex-1 text-lg text-gray dark:text-darkGray">
+                {e.price}
+                <div className="text-shadowCard px-1 flex">ل.س</div>
               </div>
-              <div className="px-6 py-2  text-lg flex flex-col flex-1 text-gray">
+              <div className="px-6 py-2 text-lg flex flex-col flex-1 text-gray dark:text-darkGray">
                 {e.Description}
               </div>
             </div>
-              
           </div>
         ) : categorie === 'home' ?  <div
-        className="bg-white h-full w-72 py-2 shadow-xl shadow-shadowCard rounded-2xl transition ease-in-out delay-150  duration-300 "
+        className="bg-white h-full w-72 py-2 shadow-xl shadow-shadowCard rounded-2xl transition ease-in-out delay-150 duration-300 dark:bg-darkSecondary dark:text-darkFontHero"
         key={i}
       >
         <Image
           src={e.product.src}
-          className="h-72 py-0  p-2 rounded-2xl object-fill"
+          className="h-72 py-0 p-2 rounded-2xl object-fill"
           width={300}
           height={50}
           alt={e.title}
         />
-        <div className="flex justify-between  flex-col flex-1 flex-grow-1">
-          <div className="px-6 py-2 text-black text-2xl font-bold text-titelCard flex-1">{e.title}</div>
-          <div className="px-6  flex align flex-1  text-lg text-gray ">
-            {e.price}<div className='text-shadowCard px-1 flex '>ل.س</div>
+        <div className="flex justify-between flex-col flex-1 flex-grow-1">
+          <div className="px-6 py-2 text-2xl font-bold text-titelCard flex-1 dark:text-darkText">{e.title}</div>
+          <div className="px-6 flex align flex-1 text-lg text-gray dark:text-darkGray">
+            {e.price}
+            <div className="text-shadowCard px-1 flex">ل.س</div>
           </div>
-          <div className="px-6 py-2 text-black text-lg flex flex-col flex-1 text-gray font-[Poppins]">
+          <div className="px-6 py-2 text-lg flex flex-col flex-1 text-gray dark:text-darkGray">
             {e.Description}
           </div>
         </div>
-          
-      </div>:null}
+      </div> : null }
       </>
     ));
 
   return (
-    <div className="md:grid  md:grid-cols-2   xl:grid xl:grid-cols-4 lg:grid xs:w-full lg:grid-cols-3 sm:grid sm:grid-cols-2 sm:gap-14  xs:grid xs:justify-items-center xs:grid-cols-1 gap-4 px-10 my-5">
-      { data}
+    <div className="md:grid md:grid-cols-2 xl:grid xl:grid-cols-4 lg:grid xs:w-full lg:grid-cols-3 sm:grid sm:grid-cols-2 sm:gap-14 xs:grid xs:justify-items-center xs:grid-cols-1 gap-4 px-10 my-5 dark:bg-darkPrimary">
+      {data}
     </div>
   );
 }

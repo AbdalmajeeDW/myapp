@@ -128,8 +128,8 @@ const products = [
     categorie: "hotDrink",
   },
   {
-    product: chocoLoto_1,
-    product: chocoLoto_2,
+    product: logo,
+    
     Description: "مزيج كلاسيكي من القهوة والحليب.",
     title: "كافي لاتيه",
     price: "12,000  ",
@@ -494,14 +494,14 @@ const products = [
     categorie: "candies",
   },
 
-  {
-    product: sharlot_1,
-    Description:
-      " طبقات من البسكويت مع الحليب الخاص، تُضاف إليها الشوكولا لذّة مُميزة.",
-    title: "شارلوت",
-    price: "15,500  ",
-    categorie: "candies",
-  },
+  // {
+  //   product: sharlot_1,
+  //   Description:
+  //     " طبقات من البسكويت مع الحليب الخاص، تُضاف إليها الشوكولا لذّة مُميزة.",
+  //   title: "شارلوت",
+  //   price: "15,500  ",
+  //   categorie: "candies",
+  // },
 
   {
     product: senabon_1,
@@ -533,7 +533,7 @@ const products = [
     product: cakeoreio_1,
     Description:
       "مزيج من الجبنة وبسكويت الاوريو المطحون، تُغطى بطبقة بسكويت لذّة مُغرية.",
-    title: "تشيز كيك اوريو",
+    title: " تشيز كيك اوريو كاسة",
     price: "20,000  ",
     categorie: "candies",
   },
@@ -552,13 +552,7 @@ const products = [
     price: "19,500",
     categorie: "candies",
   },
-  {
-    product:logo ,
-    Description: "تحضر بعناية لأجلك",
-    title: " تشيز كيك اوريو كاسة",
-    price: "20,000",
-    categorie: "candies",
-  },
+ 
   {
     product:logo ,
     Description: "تحضر بعناية لأجلك",
