@@ -1,103 +1,144 @@
+"use client";
+import Card from "../components/card";
+import { useEffect, useState, useRef } from "react";
+import logo from "../public/logo_MrCoffe.png";
 import Image from "next/image";
+import { BiHomeAlt2 } from "react-icons/bi";
+import { FaCandyCane } from "react-icons/fa6";
+import { FaSnowflake } from "react-icons/fa";
+import { FiCoffee } from "react-icons/fi";
+import { FaSun } from "react-icons/fa6";
+import Footer from "../components/footer";
 
 export default function Home() {
-  return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm/6 text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2 tracking-[-.01em]">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-[family-name:var(--font-geist-mono)] font-semibold">
-              app/page.tsx
-            </code>
-            .
-          </li>
-          <li className="tracking-[-.01em]">
-            Save and see your changes instantly.
-          </li>
-        </ol>
+  const [activeTab, setActiveTab] = useState("home");
+  const [showNav, setShowNav] = useState(false);
+  const [title, setTitle] = useState();
+  const productsRef = useRef(null);
 
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:w-auto"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
+  const tabs = [
+    { id: "candies", title: "الحلويات", icon: <FaCandyCane size={22} /> },
+    { id: "hotDrink", title: "المشروبات الساخنة", icon: <FaSun size={22} /> },
+    {
+      id: "iceDrink",
+      title: "المشروبات الباردة",
+      icon: <FaSnowflake size={22} />,
+    },
+    { id: "coffee", title: "اصناف القهوة", icon: <FiCoffee size={22} /> },
+    { id: "home", title: "الرئيسية", icon: <BiHomeAlt2 size={27} /> },
+  ];
+
+  const [categoie, setCategoie] = useState<string>("home");
+  const [splash, setSplash] = useState<boolean>(true);
+
+  useEffect(() => {
+    setTimeout(() => {
+      setSplash(false);
+    }, 5000);
+
+    const handleScroll = () => {
+      if (window.scrollY > window.innerHeight * 0.6) {
+        setShowNav(true);
+      } else {
+        setShowNav(false);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
+  const scrollToProducts = () => {
+    if (productsRef.current) {
+      productsRef.current.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
+  return (
+    <div className="h-screen bg-gradient-to-br from-[#2E2E2E] to-fontHero font-[Poppins]">
+      {splash === false ? (
+        <>
+          <div className="flex flex-col items-center justify-center h-screen">
+            <div className="relative w-52 h-52 bg-white/10 backdrop-blur-lg p-2 rounded-3xl shadow-inner flex items-center justify-center border border-white/20">
+              <Image
+                alt="Mr.Coffee Logo"
+                width={140}
+                height={140}
+                src="/logo.png"
+                className="rounded-lg object-contain animate-pulse w-40 h-40 md:w-60 md:h-60"
+                style={{
+                  filter: "drop-shadow(0px 4px 10px rgba(255, 255, 255, 0.2))",
+                }}
+              />
+            </div>
+
+            <h1 className="text-white text-3xl font-bold mt-6 font-[Poppins]">
+              مرحبًا بك في Mr. Coffee
+            </h1>
+            <p className="text-gray-300 mt-2 text-lg text-center text-white">
+              استكشف أصنافنا المميزة وتمتع بأفضل تجربة قهوة 🍂
+            </p>
+          <div id="title"></div>
+
+            <button
+              onClick={scrollToProducts}
+              className="mt-6 bg-secondryColor hover:bg-shadowCard text-white py-2 px-6 rounded-full text-lg font-medium shadow-lg transition-all hover:bg-opacity-90"
+            >
+              استكشاف القائمة ☕
+            </button>
+
+          </div>
+
+          <div
+            className={`fixed bottom-5 left-1/2 transform -translate-x-1/2 transition-all duration-500  pb-3 ${
+              showNav ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
+            }`}
           >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 w-full sm:w-auto md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+            <div className="flex items-center gap-6 px-6  backdrop-blur-md shadow-lg rounded-full p-1 border border-white/10">
+              {tabs.map((tab) => (
+                <div
+                  key={tab.id}
+                  onClick={() => {
+                    setActiveTab(tab.id);
+                    setCategoie(tab.id);
+                  }}
+                  className={`p-3 rounded-full cursor-pointer transition-all ${
+                    activeTab === tab.id
+                      ? "bg-secondryColor text-white shadow-md"
+                      : "text-gray hover:text-shadowCard"
+                  }`}
+                >
+                 <a href="#title"> {tab.icon}</a>
+                </div>
+              ))}
+            </div>
+          </div>
+          <div className="" >
+            <h1 className="px-6 pt-10 font-bold text-3xl text-gray flex items-center gap-2">
+              <div className="text-titelCard" >
+                {tabs.find((tab) => tab.id === activeTab)?.title}
+              </div>
+              <div className="text-shadowCard pb-1">
+                {tabs.find((tab) => tab.id === activeTab)?.icon}
+              </div>
+            </h1>
+          </div>
+          <div ref={productsRef} className="mt-10 mb-10">
+            <Card categories={categoie} />
+          </div>
+          <Footer />
+        </>
+      ) : (
+        <div className="h-full z-40 fixed w-full bg-primaryColor flex items-center justify-center">
+          <Image
+            src="/logo.png"
+            alt="Splash Logo"
+            width={140}
+            height={140}
+            className="animate-pulse w-40 h-40 md:w-60 md:h-60"
+          />
         </div>
-      </main>
-      <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
+      )}
     </div>
   );
 }
