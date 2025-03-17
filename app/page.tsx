@@ -8,13 +8,14 @@ import { FaSnowflake } from "react-icons/fa";
 import { FiCoffee } from "react-icons/fi";
 import { FaSun } from "react-icons/fa6";
 import Footer from "../components/footer";
-import './globals.css'
+import "./globals.css";
+import { MdKeyboardDoubleArrowUp } from "react-icons/md";
 
 export default function Home() {
   const [activeTab, setActiveTab] = useState("home");
   const [showNav, setShowNav] = useState(false);
-  const [title, setTitle] = useState();
   const productsRef = useRef<HTMLDivElement | null>(null);
+
 
   const tabs = [
     { id: "candies", title: "الحلويات", icon: <FaCandyCane size={20} /> },
@@ -75,10 +76,10 @@ export default function Home() {
             <h1 className="text-white text-3xl font-bold mt-6 font-[Poppins]">
               مرحبًا بك في Mr. Coffee
             </h1>
-            <p className="text-gray-300 mt-2 text-lg text-center ">
+            <p className="text-white mt-2 text-lg text-center ">
               استكشف أصنافنا المميزة وتمتع بأفضل تجربة قهوة 🍂
             </p>
-          <div id="title"></div>
+            <div id="title"></div>
 
             <button
               onClick={scrollToProducts}
@@ -86,9 +87,14 @@ export default function Home() {
             >
               استكشاف القائمة ☕
             </button>
-
           </div>
-
+          <div
+            className={` cursor-pointer w-8 h-8 right-3 bg-titelCard flex items-center fixed bottom-5 justify-center rounded-lg shadow-lg text-white ${
+              showNav ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
+            }`}
+          >
+            <a href="#"><MdKeyboardDoubleArrowUp size={20} /></a>
+          </div>
           <div
             className={`fixed bottom-5 left-1/2 transform -translate-x-1/2 transition-all duration-500  pb-3 ${
               showNav ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
@@ -107,15 +113,15 @@ export default function Home() {
                       ? "bg-secondryColor text-white shadow-md"
                       : "text-gray hover:text-shadowCard"
                   }`}
-                > 
-                 <a href="#title"> {tab.icon}</a>
+                >
+                  <a href="#title"> {tab.icon}</a>
                 </div>
               ))}
             </div>
           </div>
-          <div className="" >
+          <div className="">
             <h1 className="px-6 pt-10 font-bold text-3xl text-gray flex items-center gap-2">
-              <div className="text-titelCard" >
+              <div className="text-titelCard">
                 {tabs.find((tab) => tab.id === activeTab)?.title}
               </div>
               <div className="text-shadowCard pb-1">

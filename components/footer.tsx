@@ -22,8 +22,8 @@ export default function Footer() {
             Mr.Coffee<FiCoffee size={22} /> 
           </div>
           <div className="flex gap-3 mt-2">
-            <FaFacebook className="text-[#1877F2] text-3xl cursor-pointer" />
-            <FaInstagram className="text-[#E1306C] text-3xl cursor-pointer" />
+            <a href="https://www.facebook.com/share/16DbGwkWmT/"><FaFacebook className="text-[#1877F2] text-3xl cursor-pointer" /></a>
+          <a href="https://www.instagram.com/mr.coffee.homs/"><FaInstagram className="text-[#E1306C] text-3xl cursor-pointer" /></a>  
           </div>
           <div className="flex text-2xl items-center mt-2 gap-2 text-gray">
             <MdCall size={22} className="text-footer" /> 0941802602
@@ -42,7 +42,7 @@ export default function Footer() {
             </ul>
           </div>
         </div>
-        <div className="flex flex-col w-fit xs:mt-8 md:mt-0 sm:mt-0 lg:mt-0 xl:mt-0 2xl:mt-0 items-start justify-start lg:items-start xs:items-center md:items-start gap-2 text-lg font-semibold">
+        <div className="text-nowrap flex flex-col w-fit xs:mt-8 md:mt-0 sm:mt-0 lg:mt-0 xl:mt-0 2xl:mt-0 items-start justify-start lg:items-start xs:items-center md:items-start gap-2 text-lg font-semibold">
           <div className="flex items-center  gap-2 text-4xl font-extrabold text-footer">
             <FaMapMarkerAlt size={22} className="text-footer" /> Location
           </div>
