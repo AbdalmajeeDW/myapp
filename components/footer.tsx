@@ -56,7 +56,7 @@ export default function Footer() {
           </div>
         </div>
       </div>
-      <p className="text-footer mt-2 flex items-center font-extrabold justify-center gap-2 text-lg text-center  ">
+      <p className="text-nowrap text-footer mt-2 flex items-center font-extrabold justify-center gap-2 text-lg text-center  ">
         <TfiWorld /> Best Coffee Shop In The Entire World
       </p>
     </div>

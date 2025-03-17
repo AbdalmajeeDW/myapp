@@ -25,7 +25,7 @@ export default function Home() {
       title: "المشروبات الباردة",
       icon: <FaSnowflake size={20} />,
     },
-    { id: "coffee", title: "اصناف القهوة", icon: <FiCoffee size={20} /> },
+    // { id: "coffee", title: "اصناف القهوة", icon: <FiCoffee size={20} /> },
     { id: "home", title: "الرئيسية", icon: <BiHomeAlt2 size={25} /> },
   ];
 
@@ -89,7 +89,7 @@ export default function Home() {
             </button>
           </div>
           <div
-            className={` cursor-pointer w-8 h-8 right-3 bg-titelCard flex items-center fixed bottom-5 justify-center rounded-lg shadow-lg text-white ${
+            className={` cursor-pointer w-8 h-8 right-1 bg-titelCard flex items-center fixed bottom-24 justify-center rounded-lg shadow-lg text-white ${
               showNav ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
             }`}
           >
