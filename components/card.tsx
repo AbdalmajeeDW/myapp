@@ -36,7 +36,7 @@ export default function Home(props: CardProps) {
       <>
         {e.categorie === categorie ? (
           <div
-            className="bg-gray h-full w-72 py-2 shadow-xl shadow-shadowCard rounded-2xl transition ease-in-out delay-150  duration-300 font-[Poppins] "
+            className="bg-back h-full w-72 py-2 shadow-xl shadow-shadowCard rounded-2xl transition ease-in-out delay-150  duration-300 font-[Poppins] "
             key={i}
           >
             <Image

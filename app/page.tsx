@@ -8,6 +8,7 @@ import { FaSnowflake } from "react-icons/fa";
 import { FiCoffee } from "react-icons/fi";
 import { FaSun } from "react-icons/fa6";
 import Footer from "../components/footer";
+import './globals.css'
 
 export default function Home() {
   const [activeTab, setActiveTab] = useState("home");
@@ -16,15 +17,15 @@ export default function Home() {
   const productsRef = useRef<HTMLDivElement | null>(null);
 
   const tabs = [
-    { id: "candies", title: "الحلويات", icon: <FaCandyCane size={22} /> },
-    { id: "hotDrink", title: "المشروبات الساخنة", icon: <FaSun size={22} /> },
+    { id: "candies", title: "الحلويات", icon: <FaCandyCane size={20} /> },
+    { id: "hotDrink", title: "المشروبات الساخنة", icon: <FaSun size={20} /> },
     {
       id: "iceDrink",
       title: "المشروبات الباردة",
-      icon: <FaSnowflake size={22} />,
+      icon: <FaSnowflake size={20} />,
     },
-    { id: "coffee", title: "اصناف القهوة", icon: <FiCoffee size={22} /> },
-    { id: "home", title: "الرئيسية", icon: <BiHomeAlt2 size={27} /> },
+    { id: "coffee", title: "اصناف القهوة", icon: <FiCoffee size={20} /> },
+    { id: "home", title: "الرئيسية", icon: <BiHomeAlt2 size={25} /> },
   ];
 
   const [categoie, setCategoie] = useState<string>("home");
@@ -93,7 +94,7 @@ export default function Home() {
               showNav ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
             }`}
           >
-            <div className="flex items-center gap-6 px-6  backdrop-blur-md shadow-lg rounded-full p-1 border border-white/10">
+            <div className="flex items-center gap-4 px-4  bg-white shadow-lg rounded-full p-1 border border-white/10">
               {tabs.map((tab) => (
                 <div
                   key={tab.id}
@@ -106,7 +107,7 @@ export default function Home() {
                       ? "bg-secondryColor text-white shadow-md"
                       : "text-gray hover:text-shadowCard"
                   }`}
-                >
+                > 
                  <a href="#title"> {tab.icon}</a>
                 </div>
               ))}

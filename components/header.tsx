@@ -16,7 +16,7 @@ export default function Header() {
   if (!mounted) return null; 
 
   return (
-    <header className="px-28 bg-primaryColor font-[Poppins] dark:bg-darkPrimary flex fixed z-20 flex-row items-center justify-between xs:px-4 h-20 w-full p-2">
+    <header className=" px-28 bg-primaryColor font-[Poppins] dark:bg-darkPrimary flex fixed z-20 flex-row items-center justify-between xs:px-4 h-20 w-full p-2">
       <div className="px-5 cursor-pointer" >
        
           <MdOutlineDarkMode size={22} className="text-fontHero" />

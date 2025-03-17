@@ -29,7 +29,7 @@ export default function Footer() {
             <MdCall size={22} className="text-footer" /> 0941802602
           </div>
         </div>
-        <div className="flex flex-col items-start lg:items-start xs:items-center gap-2 text-lg font-semibold">
+        <div className="flex flex-col xs:mt-8 md:mt-0 sm:mt-0 lg:mt-0 xl:mt-0 2xl:mt-0 items-start lg:items-start xs:items-center gap-2 text-lg font-semibold">
           <div className="flex items-center gap-2 text-4xl font-extrabold text-footer">
             <AiFillProduct size={22} className="text-footer" /> Categories
           </div>
@@ -42,7 +42,7 @@ export default function Footer() {
             </ul>
           </div>
         </div>
-        <div className="flex flex-col w-fit items-start justify-start lg:items-start xs:items-center md:items-start gap-2 text-lg font-semibold">
+        <div className="flex flex-col w-fit xs:mt-8 md:mt-0 sm:mt-0 lg:mt-0 xl:mt-0 2xl:mt-0 items-start justify-start lg:items-start xs:items-center md:items-start gap-2 text-lg font-semibold">
           <div className="flex items-center  gap-2 text-4xl font-extrabold text-footer">
             <FaMapMarkerAlt size={22} className="text-footer" /> Location
           </div>
