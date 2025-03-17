@@ -1,6 +1,6 @@
 "use client";
 
-import "./globals.css";
+import './globals.css'
 import Header from "../components/header";
 import { ReactNode } from "react";
 

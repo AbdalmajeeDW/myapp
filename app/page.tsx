@@ -1,7 +1,6 @@
 "use client";
 import Card from "../components/card";
 import { useEffect, useState, useRef } from "react";
-import logo from "../public/logo_MrCoffe.png";
 import Image from "next/image";
 import { BiHomeAlt2 } from "react-icons/bi";
 import { FaCandyCane } from "react-icons/fa6";
@@ -14,7 +13,7 @@ export default function Home() {
   const [activeTab, setActiveTab] = useState("home");
   const [showNav, setShowNav] = useState(false);
   const [title, setTitle] = useState();
-  const productsRef = useRef(null);
+  const productsRef = useRef<HTMLDivElement | null>(null);
 
   const tabs = [
     { id: "candies", title: "الحلويات", icon: <FaCandyCane size={22} /> },
@@ -75,7 +74,7 @@ export default function Home() {
             <h1 className="text-white text-3xl font-bold mt-6 font-[Poppins]">
               مرحبًا بك في Mr. Coffee
             </h1>
-            <p className="text-gray-300 mt-2 text-lg text-center text-white">
+            <p className="text-gray-300 mt-2 text-lg text-center ">
               استكشف أصنافنا المميزة وتمتع بأفضل تجربة قهوة 🍂
             </p>
           <div id="title"></div>
