@@ -44,12 +44,46 @@ import logo from "../public/logo_MrCoffe.png";
 
 const products = [
   {
+    product: hotMsCoffeeGold_1,
+    Description:
+      "لذة كلاسيكية من قهوة فريدة تُحلى بالحليب، تُقدم لك طعمًا دافئًا ومُرضيًا.",
+    title: "هوت مستر كوفي غولد",
+    price: "14,000  ",
+    categorie: "hotDrink",
+    additions: [
+      {
+        title: " هوت مستر كوفي شوكو",
+        price: "14,500",
+      },
+
+      {
+        title: " هوت مستر كوفي كوكونات",
+        price: "14,500",
+      },
+    ],
+  },
+  {
     product: _3in1_1,
     product: _3in1_2,
-    title: "3in1",
+    title: "3 ب 1 ",
     Description: "مزيج كلاسيكي من قهوة ٣ب١ والحليب، تُقدم لك طعمًا لذيذاً.",
-    price: "8,000  ",
+    price: `8,000  `,
+
     categorie: "hotDrink",
+    additions: [
+      {
+        title: " 3 ب 1 مع الحليب",
+        price: "10,000",
+      },
+      {
+        title: " 3 ب 1 مع نسله",
+        price: "10,000",
+      },
+      {
+        title: " 3 ب 1 نسله وحليب",
+        price: "11,500",
+      },
+    ],
   },
   {
     product: _6in1_1,
@@ -60,14 +94,7 @@ const products = [
     price: "14,000  ",
     categorie: "hotDrink",
   },
-  {
-    product: hotMsCoffeeGold_1,
-    Description:
-      "لذة كلاسيكية من قهوة فريدة تُحلى بالحليب، تُقدم لك طعمًا دافئًا ومُرضيًا.",
-    title: "هوت مستر كوفي غولد",
-    price: "14,000  ",
-    categorie: "hotDrink",
-  },
+
   {
     product: hotAfter8_1,
     product: hotAfter8_2,
@@ -129,7 +156,7 @@ const products = [
   },
   {
     product: logo,
-    
+
     Description: "مزيج كلاسيكي من القهوة والحليب.",
     title: "كافي لاتيه",
     price: "12,000  ",
@@ -153,6 +180,66 @@ const products = [
     price: "13,000  ",
     categorie: "hotDrink",
   },
+
+  ////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+  {
+    product: logo,
+    Description: "تحضر بعناية لأجلك",
+    title: " اسبريسو دبل",
+    price: "8,500",
+    categorie: "hotDrink",
+    additions: [
+      {
+        title: " اسبريسو مع كافي ميت",
+        price: "12,000",
+      },
+
+      {
+        title: " اسبريسو نسله دبل",
+        price: "12,500",
+      },
+
+      {
+        title: " 3 ب 1 نسله وحليب",
+        price: "11,500",
+      },
+    ],
+  },
+
+  {
+    product: logo,
+    Description: "تحضر بعناية لأجلك",
+    title: " اسبريسو شوكو مستر كوفي",
+    price: "14,000",
+    categorie: "hotDrink",
+  },
+ 
+
+  {
+    product: logo,
+    Description: "تحضر بعناية لأجلك",
+    title: " اكسترا شوكلت",
+    price: "3,500",
+    categorie: "hotDrink",
+  },
+
+  {
+    product: logo,
+    Description: "تحضر بعناية لأجلك",
+    title: " شاي احمر",
+    price: "6,000",
+    categorie: "hotDrink",
+    additions: [
+      {
+        title: " شاي بالقرفة ",
+        price: "7,000",
+      },
+      {
+        title: " شاي حليب",
+        price: "8,000",
+      },
+    ],
+  },
   {
     product: teacrk_1,
     product: teacrk_2,
@@ -163,305 +250,173 @@ const products = [
     categorie: "hotDrink",
   },
   {
-    product:logo ,
-    Description: "تحضر بعناية لأجلك",
-    title: " 3ب 1 مع الحليب",
-    price: "10,000",
+    product: logo,
+
+    Description:
+      "شاي مُحلى بالحليب بالهال والقرفة، يُقدم لك طعمًا مميزًا وغنيًا.",
+    title: "شاي مستر كوفي",
+    price: "10,000  ",
     categorie: "hotDrink",
   },
   {
-    product:logo ,
-    Description: "تحضر بعناية لأجلك",
-    title: " 3 ب 1 مع نسله",
-    price: "10,000",
-    categorie: "hotDrink",
-  },
-  {
-    product:logo ,
-    Description: "تحضر بعناية لأجلك",
-    title: " 3 ب 1 نسله وحليب",
-    price: "11,500",
-    categorie: "hotDrink",
-  },
-  {
-    product:logo ,
-    Description: "تحضر بعناية لأجلك",
-    title: " اسبريسو دبل",
-    price: "8,500",
-    categorie: "hotDrink",
-  },
-  {
-    product:logo ,
-    Description: "تحضر بعناية لأجلك",
-    title: " اسبريسو شوكو مستر كوفي",
-    price: "14,000",
-    categorie: "hotDrink",
-  },
-  {
-    product:logo ,
-    Description: "تحضر بعناية لأجلك",
-    title: " اسبريسو كبتشينو",
-    price: "10,500",
-    categorie: "hotDrink",
-  },
-  {
-    product:logo ,
-    Description: "تحضر بعناية لأجلك",
-    title: " اسبريسو مع كافي ميت",
-    price: "12,000",
-    categorie: "hotDrink",
-  },
-  {
-    product:logo ,
-    Description: "تحضر بعناية لأجلك",
-    title: " اسبريسو نسله دبل",
-    price: "12,500",
-    categorie: "hotDrink",
-  },
-  {
-    product:logo ,
-    Description: "تحضر بعناية لأجلك",
-    title: " اكسترا شوكلت",
-    price: "3,500",
-    categorie: "hotDrink",
-  },
-  {
-    product:logo ,
+    product: logo,
     Description: "تحضر بعناية لأجلك",
     title: " اميركان كوفي",
     price: "9,500",
     categorie: "hotDrink",
   },
   {
-    product:logo ,
+    product: logo,
     Description: "تحضر بعناية لأجلك",
     title: " بلاك كوفي ميلك",
     price: "10,000",
     categorie: "hotDrink",
   },
+
   {
-    product:logo ,
-    Description: "تحضر بعناية لأجلك",
-    title: " شاي احمر",
-    price: "6,000",
-    categorie: "hotDrink",
-  },
-  {
-    product:logo ,
-    Description: "تحضر بعناية لأجلك",
-    title: " شاي بالقرفة ",
-    price: "7,000",
-    categorie: "hotDrink",
-  },
-  {
-    product:logo ,
-    Description: "تحضر بعناية لأجلك",
-    title: " شاي حليب",
-    price: "8,000",
-    categorie: "hotDrink",
-  },
-  {
-    product:logo ,
+    product: logo,
     Description: "تحضر بعناية لأجلك",
     title: " فانيل لاتشينو",
     price: "11,000",
     categorie: "hotDrink",
   },
   {
-    product:logo ,
+    product: logo,
     Description: "تحضر بعناية لأجلك",
-    title: " كبتشينو",
+    title: " كابتشينو ",
     price: "9,000",
     categorie: "hotDrink",
-  },
-  {
-    product:logo ,
-    Description: "تحضر بعناية لأجلك",
-    title: " كبتشينو مع حليب",
+    additions: [
+      {
+        title: " كابتشينو  مع حليب",
     price: "11,000",
-    categorie: "hotDrink",
+      },
+      {
+        title: " كابتشينو  مع نسله و حليب",
+        price: "12,500",
+      },
+      {
+        title: " كابتشينو  مع نسله",
+        price: "11,000",
+      },
+    ],
   },
   {
-    product:logo ,
+    product: logo,
     Description: "تحضر بعناية لأجلك",
-    title: " كبتشينو مع نسله و حليب",
-    price: "12,500",
+    title: " كابتشينو اسبريسو",
+    price: "10,500",
     categorie: "hotDrink",
   },
+
   {
-    product:logo ,
-    Description: "تحضر بعناية لأجلك",
-    title: " كبتشينو مع نسله",
-    price: "11,000",
-    categorie: "hotDrink",
-  },
-  {
-    product:logo ,
+    product: logo,
     Description: "تحضر بعناية لأجلك",
     title: " لاتيه لوتس",
     price: "11,000",
     categorie: "hotDrink",
   },
   {
-    product:logo ,
+    product: logo,
     Description: "تحضر بعناية لأجلك",
     title: " ميلو",
     price: "8,000",
     categorie: "hotDrink",
+    additions: [
+      {
+        title: " ميلو حليب ونسله",
+        price: "11,500",
+      },
+      {
+        title: " ميلو وحليب",
+        price: "10,500",
+      },
+      {
+        title: " ميلو ونسله",
+        price: "9,500",
+      },
+    ],
   },
+
   {
-    product:logo ,
-    Description: "تحضر بعناية لأجلك",
-    title: " ميلو حليب ونسله",
-    price: "11,500",
-    categorie: "hotDrink",
-  },
-  {
-    product:logo ,
-    Description: "تحضر بعناية لأجلك",
-    title: " ميلو وحليب",
-    price: "10,500",
-    categorie: "hotDrink",
-  },
-  {
-    product:logo ,
-    Description: "تحضر بعناية لأجلك",
-    title: " ميلو ونسله",
-    price: "9,500",
-    categorie: "hotDrink",
-  },
-  {
-    product:logo ,
+    product: logo,
     Description: "تحضر بعناية لأجلك",
     title: " نسكافيه غولد سادة",
     price: "9,500",
     categorie: "hotDrink",
+    additions: [
+      {
+        title: " نسكافيه غولد مع كافي ميت",
+        price: "12,000",
+      },
+      {
+        title: " نسكافيه غولد مع نسله",
+        price: "12,000",
+      },
+      {
+        title: " نسكافيه غولد مع حليب",
+        price: "12,000",
+      },
+    ],
   },
+
   {
-    product:logo ,
-    Description: "تحضر بعناية لأجلك",
-    title: " نسكافيه غولد مع كافي ميت",
-    price: "12,000",
-    categorie: "hotDrink",
-  },
-  {
-    product:logo ,
-    Description: "تحضر بعناية لأجلك",
-    title: " نسكافيه غولد مع نسله",
-    price: "12,000",
-    categorie: "hotDrink",
-  },
-  {
-    product:logo ,
-    Description: "تحضر بعناية لأجلك",
-    title: " نسكافيه غولد مع حليب",
-    price: "12,000",
-    categorie: "hotDrink",
-  },
-  {
-    product:logo ,
+    product: logo,
     Description: "تحضر بعناية لأجلك",
     title: " نسكافيه ماغ احمر",
     price: "8,000",
     categorie: "hotDrink",
   },
   {
-    product:logo ,
+    product: logo,
     Description: "تحضر بعناية لأجلك",
     title: " هوت سيريلاك شوكو",
     price: "13,500",
     categorie: "hotDrink",
   },
+ 
   {
-    product:logo ,
+    product: logo,
+    Description: "تحضر بعناية لأجلك",
+    title: " هوت شوكلت",
+    price: "9,000",
+    categorie: "hotDrink",
+    additions: [
+      {
+        title: " هوت شوكلت سويس مس",
+        price: "11,500",
+      },
+      {
+        title: " هوت شوكلت فانيل",
+        price: "11,500",
+      },
+      {
+        title: " هوت شوكلت مالتيزرز",
+        price: "11,500",
+      },
+      {
+        title: " هوت شوكلت نسله",
+        price: "11,500",
+      },
+      {
+        title: " هوت شوكلت نوتيلا",
+        price: "11,500",
+      },
+    ],
+  },
+  {
+    product: logo,
     Description: "تحضر بعناية لأجلك",
     title: " هوت شوكلت مستر كوفي",
     price: "11,500",
     categorie: "hotDrink",
   },
+
   {
-    product:logo ,
-    Description: "تحضر بعناية لأجلك",
-    title: " هوت شوكلت",
-    price: "9,000",
-    categorie: "hotDrink",
-  },
-  {
-    product:logo ,
-    Description: "تحضر بعناية لأجلك",
-    title: " هوت شوكلت سويس مس",
-    price: "11,500",
-    categorie: "hotDrink",
-  },
-  {
-    product:logo ,
-    Description: "تحضر بعناية لأجلك",
-    title: " هوت شوكلت فانيل",
-    price: "11,500",
-    categorie: "hotDrink",
-  },
-  {
-    product:logo ,
-    Description: "تحضر بعناية لأجلك",
-    title: " هوت شوكلت مارشميلو",
-    price: "11,500",
-    categorie: "hotDrink",
-  },
-  {
-    product:logo ,
-    Description: "تحضر بعناية لأجلك",
-    title: " هوت شوكلت مالتيزرز",
-    price: "11,500",
-    categorie: "hotDrink",
-  },
-  {
-    product:logo ,
-    Description: "تحضر بعناية لأجلك",
-    title: " هوت شوكلت نسله",
-    price: "11,500",
-    categorie: "hotDrink",
-  },
-  {
-    product:logo ,
-    Description: "تحضر بعناية لأجلك",
-    title: " هوت شوكلت نوتيلا",
-    price: "11,500",
-    categorie: "hotDrink",
-  },
-  {
-    product:logo ,
-    Description: "تحضر بعناية لأجلك",
-    title: " هوت مستر كوفي شوكو",
-    price: "14,500",
-    categorie: "hotDrink",
-  },
-  {
-    product:logo ,
-    Description: "تحضر بعناية لأجلك",
-    title: " هوت مستر كوفي كوكونات",
-    price: "14,500",
-    categorie: "hotDrink",
-  },
-  {
-    product:logo ,
+    product: logo,
     Description: "تحضر بعناية لأجلك",
     title: " قهوة تركية دبل",
     price: "8,500",
-    categorie: "hotDrink",
-  },
-  {
-    product:logo ,
-    Description: "تحضر بعناية لأجلك",
-    title: " قهوة تركية دبل مع هال",
-    price: "8,500",
-    categorie: "hotDrink",
-  },
-  {
-    product: teaMsCoffee_1,
-    product: teaMsCoffee_2,
-    Description: "شاي مُميز تُحلى بالحليب، يُقدم لك لذة مُريحة تُرضي ذوقك.",
-    title: "شاي مستر كوفي",
-    price: "10,000  ",
     categorie: "hotDrink",
   },
 
@@ -501,6 +456,7 @@ const products = [
   //   title: "شارلوت",
   //   price: "15,500  ",
   //   categorie: "candies",
+  // additions:' ',
   // },
 
   {
@@ -539,28 +495,28 @@ const products = [
   },
 
   {
-    product:logo ,
+    product: logo,
     Description: "تحضر بعناية لأجلك",
     title: " براونيز",
     price: "19,500",
     categorie: "candies",
   },
   {
-    product:logo ,
+    product: logo,
     Description: "تحضر بعناية لأجلك",
     title: " ترفل كيك",
     price: "19,500",
     categorie: "candies",
   },
- 
+
   {
-    product:logo ,
+    product: logo,
     Description: "تحضر بعناية لأجلك",
     title: " كيكة دبي",
     price: "28,500",
     categorie: "candies",
   },
-  
+
   ////////iceDrink////////
 
   {
@@ -602,341 +558,199 @@ const products = [
     title: "ميلك شيك باونتي ",
     price: "22,500  ",
     categorie: "iceDrink",
+    // additions: [
+    //   { title: " ميلك شيك تراميسو", price: "24,500" },
+    //   { title: " ميلك شيك سيريلاك", price: "22,000" },
+    //   { title: " ميلك شيك فانيل", price: "20,500" },
+    //   { title: "ميلك شيك كراميل ", price: "22,000  " },
+    //   { title: "ميلك شيك لوتس ", price: "22,500  " },
+
+    //   { title: " ميلك شيك نوتيلا", price: "22,500" },
+    //   { title: " ميلك شيك اوريو", price: "22,500" },
+    // ],
   },
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
   {
-    product: milkcheck_1,
-    Description: "حليب وكراميل مع البوظة، حلاوة لا تُقاوم",
-    title: "ميلك شيك كراميل ",
-    price: "22,000  ",
-    categorie: "iceDrink",
-  },
-  {
-    product:milkchecklotos_1 ,
-    Description: "حليب وكريمة اللوتس مع البوظة، لذة لا تُقاوم",
-    title: "ميلك شيك لوتس ",
-    price: "22,500  ",
-    categorie: "iceDrink",
-  },/////////////////
-  {
-    product:logo ,
+    product: logo,
     Description: "تحضر بعناية لأجلك",
     title: "اوريو فراب ",
     price: "25,000  ",
     categorie: "iceDrink",
   },
   {
-    product:logo ,
+    product: logo,
     Description: "تحضر بعناية لأجلك",
     title: "آيس 3 ب 1 ",
     price: "21,000  ",
     categorie: "iceDrink",
   },
   {
-    product:logo ,
+    product: logo,
     Description: "تحضر بعناية لأجلك",
     title: "آيس 6 ب 1 ",
     price: "23,500  ",
     categorie: "iceDrink",
   },
   {
-    product:logo ,
+    product: logo,
     Description: "تحضر بعناية لأجلك",
     title: "آيس اسبريسو ",
     price: "18,000",
     categorie: "iceDrink",
   },
   {
-    product:logo ,
+    product: logo,
     Description: "تحضر بعناية لأجلك",
     title: "آيس تي بلو بيري ",
     price: "19,000",
     categorie: "iceDrink",
   },
   {
-    product:logo ,
+    product: logo,
     Description: "تحضر بعناية لأجلك",
     title: " آيس سبانش لاتيه",
     price: "22,000",
     categorie: "iceDrink",
   },
   {
-    product:logo ,
+    product: logo,
     Description: "تحضر بعناية لأجلك",
     title: " آيس شوكليت",
     price: "19,500",
     categorie: "iceDrink",
   },
   {
-    product:logo ,
+    product: logo,
     Description: "تحضر بعناية لأجلك",
     title: " آيس كافي",
     price: "23,000",
     categorie: "iceDrink",
   },
   {
-    product:logo ,
+    product: logo,
     Description: "تحضر بعناية لأجلك",
     title: " آيس مستر كوفي",
     price: "23,500",
     categorie: "iceDrink",
   },
   {
-    product:logo ,
+    product: logo,
     Description: "تحضر بعناية لأجلك",
     title: " آيس موكا",
     price: "21,500",
     categorie: "iceDrink",
   },
   {
-    product:logo ,
+    product: logo,
     Description: "تحضر بعناية لأجلك",
     title: " آيس ميلو",
     price: "18,500",
     categorie: "iceDrink",
   },
   {
-    product:logo ,
+    product: logo,
     Description: "تحضر بعناية لأجلك",
     title: " آيس وايت مستر كوفي",
     price: "23,000",
     categorie: "iceDrink",
   },
   {
-    product:logo ,
+    product: logo,
     Description: "تحضر بعناية لأجلك",
     title: " آيس وايت موكا",
     price: "23,500",
     categorie: "iceDrink",
   },
   {
-    product:logo ,
+    product: logo,
     Description: "تحضر بعناية لأجلك",
     title: " بولو",
     price: "19,500",
     categorie: "iceDrink",
   },
   {
-    product:logo ,
+    product: logo,
     Description: "تحضر بعناية لأجلك",
     title: " سفن Love",
     price: "19,000",
     categorie: "iceDrink",
+    // additions: [
+    //   { title: " سفن باشن فروت", price: "19,000" },
+    //   { title: " سفن بلو", price: "19,000" },
+    //   { title: " سفن توريو", price: "20,500" },
+
+    //   { title: "سفن رمان وبلو", price: "19,000" },
+
+    //   { title: "سفن غراندن", price: "19,000" },
+
+    //   { title: "سفن غليتر بلو", price: "21,000" },
+
+    //   { title: "سفن غليتر بلو غراندن", price: "21,000" },
+
+    //   { title: " سفن غليتر غراندن", price: "21,000" },
+
+    //   { title: " سفن غليتر لوف", price: "21,000" },
+
+    //   { title: " سفن كاندي", price: "19,000" },
+    //   { title: " سفن ليمون ونعنع", price: "19,000" },
+    // ],
   },
+
   {
-    product:logo ,
-    Description: "تحضر بعناية لأجلك",
-    title: " سفن باشن فروت",
-    price: "19,000",
-    categorie: "iceDrink",
-  },
-  {
-    product:logo ,
-    Description: "تحضر بعناية لأجلك",
-    title: " سفن بلو",
-    price: "19,000",
-    categorie: "iceDrink",
-  }, {
-    product:logo ,
-    Description: "تحضر بعناية لأجلك",
-    title: " سفن توريو",
-    price: "20,500",
-    categorie: "iceDrink",
-  },
-  {
-    product:logo ,
-    Description: "تحضر بعناية لأجلك",
-    title: " سفن رمان وبلو",
-    price: "19,000",
-    categorie: "iceDrink",
-  }, {
-    product:logo ,
-    Description: "تحضر بعناية لأجلك",
-    title: " سفن غراندن",
-    price: "19,000",
-    categorie: "iceDrink",
-  },
-  {
-    product:logo ,
-    Description: "تحضر بعناية لأجلك",
-    title: " سفن غليتر بلو",
-    price: "21,000",
-    categorie: "iceDrink",
-  },
-  {
-    product:logo ,
-    Description: "تحضر بعناية لأجلك",
-    title: "  سفن غليتر بلو غراندن",
-    price: "21,000",
-    categorie: "iceDrink",
-  },
-  {
-    product:logo ,
-    Description: "تحضر بعناية لأجلك",
-    title: " سفن غليتر غراندن",
-    price: "21,000",
-    categorie: "iceDrink",
-  },
-  {
-    product:logo ,
-    Description: "تحضر بعناية لأجلك",
-    title: " سفن غليتر لوف",
-    price: "21,000",
-    categorie: "iceDrink",
-  },
-  {
-    product:logo ,
-    Description: "تحضر بعناية لأجلك",
-    title: " سفن كاندي",
-    price: "19,000",
-    categorie: "iceDrink",
-  },
-  {
-    product:logo ,
-    Description: "تحضر بعناية لأجلك",
-    title: " سفن ليمون ونعنع",
-    price: "19,000",
-    categorie: "iceDrink",
-  },
-  {
-    product:logo ,
+    product: logo,
     Description: "تحضر بعناية لأجلك",
     title: " شيكن وايت موكا",
     price: "23,500",
     categorie: "iceDrink",
   },
   {
-    product:logo ,
+    product: logo,
     Description: "تحضر بعناية لأجلك",
     title: " عصير بطيخ",
     price: "19,000",
     categorie: "iceDrink",
   },
   {
-    product:logo ,
+    product: logo,
     Description: "تحضر بعناية لأجلك",
     title: " عصير شمام",
     price: "19,000",
     categorie: "iceDrink",
   },
   {
-    product:logo ,
+    product: logo,
     Description: "تحضر بعناية لأجلك",
     title: " فانيل فراب",
     price: "21,500",
     categorie: "iceDrink",
   },
   {
-    product:logo ,
+    product: logo,
     Description: "تحضر بعناية لأجلك",
     title: " فرابتشينو كراميل",
     price: "22,500",
     categorie: "iceDrink",
   },
   {
-    product:logo ,
+    product: logo,
     Description: "تحضر بعناية لأجلك",
     title: " فرابتشينو نوتيلا",
     price: "24,000",
     categorie: "iceDrink",
   },
   {
-    product:logo ,
+    product: logo,
     Description: "تحضر بعناية لأجلك",
     title: " موهيتو بلو",
     price: "19,500",
     categorie: "iceDrink",
-  },
-  {
-    product:logo ,
-    Description: "تحضر بعناية لأجلك",
-    title: " موهيتو بلو بيري",
-    price: "19,500",
-    categorie: "iceDrink",
-  },
-  {
-    product:logo ,
-    Description: "تحضر بعناية لأجلك",
-    title: " موهيتو دراق",
-    price: "19,500",
-    categorie: "iceDrink",
-  },
-  {
-    product:logo ,
-    Description: "تحضر بعناية لأجلك",
-    title: " موهيتو غراندن",
-    price: "19,500",
-    categorie: "iceDrink",
-  },
-  {
-    product:logo ,
-    Description: "تحضر بعناية لأجلك",
-    title: " موهيتو لوف",
-    price: "19,500",
-    categorie: "iceDrink",
-  },
-  {
-    product:logo ,
-    Description: "تحضر بعناية لأجلك",
-    title: " موهيتو نعنع",
-    price: "19,500",
-    categorie: "iceDrink",
-  },
-  {
-    product:logo ,
-    Description: "تحضر بعناية لأجلك",
-    title: " ميلك شيك اوريو",
-    price: "22,500",
-    categorie: "iceDrink",
-  },
-  {
-    product:logo ,
-    Description: "تحضر بعناية لأجلك",
-    title: " ميلك شيك تراميسو",
-    price: "24,500",
-    categorie: "iceDrink",
-  },
-  {
-    product:logo ,
-    Description: "تحضر بعناية لأجلك",
-    title: " ميلك شيك سيريلاك",
-    price: "22,000",
-    categorie: "iceDrink",
-  },
-  {
-    product:logo ,
-    Description: "تحضر بعناية لأجلك",
-    title: " ميلك شيك فانيل",
-    price: "20,500",
-    categorie: "iceDrink",
-  },
-  {
-    product:logo ,
-    Description: "تحضر بعناية لأجلك",
-    title: " ميلك شيك نوتيلا",
-    price: "22,500",
-    categorie: "iceDrink",
+    // additions: [
+    //   { title: "موهيتو بلو بيري ", price: "19,500" },
+    //   { title: "موهيتو دراق ", price: "19,500" },
+    //   { title: "موهيتو غراندن ", price: "19,500" },
+    //   { title: "موهيتو لوف ", price: "19,500" },
+    //   { title: "موهيتو نعنع ", price: "19,500" },
+    // ],
   },
 ];
 export default { products };

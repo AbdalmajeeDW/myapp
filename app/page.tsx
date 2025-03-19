@@ -90,14 +90,14 @@ export default function Home() {
             </button>
           </div>
           <div
-            className={` cursor-pointer w-8 h-8 right-1 bg-titelCard dark:bg-white dark:text-darkPrimaryColor flex items-center fixed bottom-24 justify-center rounded-lg shadow-lg text-white ${
+            className={` cursor-pointer w-8 h-8 right-3 bg-titelCard dark:bg-white dark:text-darkPrimaryColor flex items-center fixed bottom-44 justify-center z-50 rounded-lg shadow-lg text-white ${
               showNav ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
             }`}
           >
             <a href="#"><MdKeyboardDoubleArrowUp size={20} /></a>
           </div>
           <div
-            className={`fixed bottom-5 left-1/2 transform -translate-x-1/2 transition-all duration-500  pb-3 ${
+            className={`fixed bottom-5 left-1/2 z-50 transform -translate-x-1/2 transition-all duration-500  pb-3 ${
               showNav ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
             }`}
           >
@@ -130,7 +130,7 @@ export default function Home() {
               </div>
             </h1>
           </div>
-          <div ref={productsRef} className="mt-10 mb-10">
+          <div ref={productsRef} className="mt-10 mb-10 " >
             <Card categories={categoie} />
           </div>
           <Footer />
