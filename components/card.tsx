@@ -45,15 +45,15 @@ export default function Home(props: CardProps) {
             >
               <Image
                 src={e.product.src}
-                className="h-72 py-0 p-2 rounded-2xl object-fill"
+                className="h-72 w-full p-1 py-0 rounded-2xl object-fill"
                 width={300}
                 height={50}
                 alt={e.title}
               />
               <div className="flex justify-between flex-col">
-                <div className="px-4 py-2  text-titelCard flex justify-between items-center dark:text-darkText">
+                <div className="px-4 py-2  text-titelCard flex  items-center dark:text-darkText">
                   <div className="text-nowrap font-bold text-xl">{e.title}</div>
-                  <div className="px-6 flex text-z text-gray font-bold dark:text-darkGray">
+                  <div className="px-6 flex  text-gray font-bold dark:text-darkGray">
                     {e.price} <span className="text-shadowCard px-1">ل.س</span>
                   </div>
                 </div>
