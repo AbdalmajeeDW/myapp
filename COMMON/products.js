@@ -227,13 +227,7 @@ const products = [
   },
  
 
-  {
-    product: logo,
-    Description: "تحضر بعناية لأجلك",
-    title: " اكسترا شوكلت",
-    price: "3,500",
-    categorie: "hotDrink",
-  },
+ 
 
   {
     product: teaRED1,
