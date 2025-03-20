@@ -18,13 +18,13 @@ export default function Footer() {
   return (
     <div
       style={{ direction: "ltr" }}
-      className="bg-[#FAF7E9] dark:bg-darkPrimary dark:text-darkText shadow-black direction text-footer px-5 shadow-2xl font-[Poppins]"
+      className="bg-[#FAF7E9] w-full dark:bg-darkPrimary dark:text-darkText shadow-black direction text-footer px-5 shadow-2xl font-[Poppins]"
     >
-      <div className="md:grid pt-16 pb-16 md:grid-cols-2 xl:grid xl:grid-cols-3 lg:grid lg:grid-cols-3 sm:grid sm:grid-cols-1 sm:gap-14 xs:grid xs:justify-items-center md:justify-items-start xs:grid-cols-1 lg:gap-32 px-10">
-        <div className="flex flex-col justify-start items-start lg:items-start md:items-start xs:items-center gap-2">
-          <div className="flex items-center justify-start gap-2 text-4xl font-extrabold text-footer dark:text-white">
+      <div className="w-full md:grid pt-16 pb-16 md:grid-cols-2 xl:grid xl:grid-cols-3 lg:grid lg:grid-cols-3 sm:grid sm:grid-cols-1 sm:gap-14 xs:grid xs:justify-items-center md:justify-items-start xs:grid-cols-1 lg:gap-10 px-5">
+        <div className="flex flex-col  lg:items-start md:items-start xs:items-center gap-2">
+          <div className="font-serif flex items-center justify-start gap-2 text-4xl font-extrabold text-footer dark:text-white">
             Mr.Coffee
-            <FiCoffee size={22} className="text-footer dark:text-white" />
+            <FiCoffee size={22} className="text-footer dark:text-white font-serif" />
           </div>
           <div className="flex gap-3 mt-2">
             <a href="https://www.facebook.com/share/16DbGwkWmT/">
@@ -34,36 +34,38 @@ export default function Footer() {
               <FaInstagram className="text-[#E1306C] text-3xl cursor-pointer dark:text-white" />
             </a>
           </div>
-          <div className="flex text-2xl items-center mt-2 gap-2 text-gray dark:text-darkText">
-            <MdCall size={22} className="text-footer dark:text-white" /> 0941802602
+          <div className="flex text-2xl items-center mt-2 gap-2 text-gray dark:text-darkText font-serif">
+            <MdCall size={22} className="text-footer font-serif dark:text-white" /> 0941802602
           </div>
         </div>
-        <div className="flex flex-col xs:mt-8 md:mt-0 sm:mt-0 lg:mt-0 xl:mt-0 2xl:mt-0 items-start lg:items-start xs:items-center gap-2 text-lg font-semibold">
-          <div className="flex items-center gap-2 text-4xl font-extrabold text-footer dark:text-white">
-            <AiFillProduct size={22} className="text-footer dark:text-white" /> Categories
+        <div className="flex flex-col xs:mt-8 md:mt-0 sm:mt-0 lg:mt-0 xl:mt-0 2xl:mt-0 items-start lg:items-start xs:items-center gap-2 text-lg font-serif">
+          <div className="flex items-center gap-2 text-4xl font-extrabold text-footer font-serif dark:text-white">
+            <AiFillProduct size={22} className="text-footer dark:text-white font-serif" /> Categories
           </div>
           <div className="flex items-center justify-center">
-            <ul className="flex flex-col items-start justify-center text-gray dark:text-darkText">
+            <ul className="flex flex-col items-start justify-center text-gray dark:text-darkText font-serif">
               <li className="flex items-center gap-3">
-                <FaSnowflake size={18} className="text-footer dark:text-white" />
+                <FaSnowflake size={18} className="text-footer font-serif dark:text-white" />
                 Cold drinks
               </li>
               <li className="flex items-center gap-3">
-                <FaSun size={18} className="text-footer dark:text-white" />
+                <FaSun size={18} className="text-footer font-serif dark:text-white" />
                 Hot drinks
               </li>
               <li className="flex items-center gap-3">
-                <FiCoffee size={18} className="text-footer dark:text-white" />
+                <FiCoffee size={18} className="text-footer font-serif dark:text-white" />
                 Coffee
               </li>
               <li className="flex items-center gap-3">
-                <FaCandyCane size={18} className="text-footer dark:text-white" />
+                <FaCandyCane size={18} className="text-footer font-serif dark:text-white" />
                 Candies
               </li>
             </ul>
           </div>
         </div>
-        <div className="xs:text-nowrap sm:text-wrap md:text-wrap flex flex-col w-fit xs:mt-8 md:mt-0 sm:mt-0 lg:mt-0 xl:mt-0 2xl:mt-0 items-start justify-start lg:items-start xs:items-center md:items-start gap-2 text-lg font-semibold">
+        <div className="flex justify-end ">
+
+        <div className="xs:text-nowrap sm:text-wrap md:text-wrap flex flex-col w-full font-serif xs:mt-8 md:mt-0 sm:mt-0 lg:mt-0 xl:mt-0 2xl:mt-0 items-start justify-start lg:items-start xs:items-center md:items-start gap-2 text-lg font-semibold">
           <div className="flex items-center gap-2 text-4xl font-extrabold text-footer dark:text-white">
             <FaMapMarkerAlt size={22} className="text-footer dark:text-white" /> Location
           </div>
@@ -76,8 +78,9 @@ export default function Footer() {
             <div className="text-gray dark:text-darkText">Business Hours: 9:00 AM - 1:00 AM</div>
           </div>
         </div>
+        </div>
       </div>
-      <p className="text-nowrap text-footer mt-2 flex items-center font-extrabold justify-center gap-2 text-lg text-center dark:text-white">
+      <p className="text-nowrap font-serif text-footer mt-2 flex items-center font-extrabold justify-center gap-2 text-lg text-center dark:text-white">
         <TfiWorld /> Best Coffee Shop In The Entire World
       </p>
     </div>

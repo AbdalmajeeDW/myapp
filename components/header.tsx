@@ -44,7 +44,7 @@ export default function Header() {
       {/* لوجو التطبيق */}
       <div className="px-5 flex flex-row justify-start items-center text-fontHero dark:text-white">
         <FiCoffee size={18} />
-        <div className="px-1 text-lg">Mr.Coffee</div>
+        <div className="px-1 text-lg font-bold font-serif">Mr.Coffee</div>
       </div>
     </header>
   );

@@ -10,7 +10,7 @@ interface Product {
   title: string;
   Description: string;
   price: string;
-  additions?: { title: string; price: string }[]; // ✅ تعديل `additions` إلى مصفوفة
+  additions?: { title: string; price: string }[]; 
   product: {
     src: string;
   };
@@ -24,6 +24,7 @@ export default function Home(props: CardProps) {
   const [count, setCount] = useState<Product[]>([]);
   const [categorie, setCategorie] = useState("home");
   const [selectedProduct, setSelectedProduct] = useState<Product | null>(null);
+console.log(count);
 
   useEffect(() => {
     setCount(products.products);
@@ -41,20 +42,23 @@ export default function Home(props: CardProps) {
           (e.categorie === categorie || categorie === "home") && (
             <div
               key={i}
-              className="relative bg-white h-full w-80  py-2 shadow-xl rounded-2xl transition duration-300 dark:bg-darkSecondary dark:text-darkFontHero"
+              className="relative bg-white h-full w-72  py-2 shadow-xl rounded-2xl shadow-shadowCard transition duration-300 dark:bg-darkSecondary dark:text-darkFontHero"
             >
+              <div className="">
+
               <Image
                 src={e.product.src}
-                className="h-72 w-full p-1 py-0 rounded-2xl object-fill"
+                className={`${e.product.src.includes('/logo_MrCoffe2.png')?`h-52 w-44`:`h-72`} w-full p-1 py-0 rounded-2xl object-fill`}
                 width={300}
                 height={50}
                 alt={e.title}
               />
+              </div>
               <div className="flex justify-between flex-col">
                 <div className="px-4 py-2  text-titelCard flex  items-center dark:text-darkText">
-                  <div className="text-nowrap font-bold text-xl">{e.title}</div>
-                  <div className="px-6 flex  text-gray font-bold dark:text-darkGray">
-                    {e.price} <span className="text-shadowCard px-1">ل.س</span>
+                  <div className="text-nowrap font-bold  text-xl">{e.title}</div>
+                  <div className="px-2 flex gap-1  text-gray font-bold dark:text-darkText">
+                    {e.price} <span className="text-shadowCard">ل.س</span>
                   </div>
                 </div>
                 <div className="px-6 flex text-lg text-graydark:text-darkGray"></div>{" "}
@@ -64,7 +68,7 @@ export default function Home(props: CardProps) {
                     {e.additions.map((addition, index) => (
                       <div
                         key={index}
-                        className="text-lg text-gray dark:text-darkGray mb-1 flex gap-1"
+                        className="text-lg text-gray dark:text-darkText mb-1 flex gap-1"
                       >
                         <span className="text-nowrap">{addition.title}</span>:{" "}
                         {addition.price}{" "}
@@ -73,7 +77,7 @@ export default function Home(props: CardProps) {
                     ))}
                   </div>
                 )}
-                <div className="px-4 py-2 text-lg text-gray dark:text-darkGray">
+                <div className="px-4 py-2 text-lg text-gray dark:text-darkText">
                   {e.Description}
                 </div>
               </div>
