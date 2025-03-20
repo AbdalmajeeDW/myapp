@@ -40,6 +40,18 @@ import cakebluebeary_1 from "../public/cakebluebeary/cakebluebeary_1.jpg";
 import cakeoreio_1 from "../public/cakeoreio/cakeoreio_1.jpg";
 import milkcheck_1 from "../public/milkchceckCaramil/milkcheck_1.jpg";
 import milkchecklotos_1 from "../public/milkchecklotos/milkchecklotos_1.jpg";
+import blackMsCoffee from "../public/blackMsCoffee1.jpg";
+import hotSerelakShoco1 from "../public/hotSerelakShoco1.jpg";
+import fanelLatshino1 from "../public/fanelLatshino1.jpg";
+import hotShoclet1 from "../public/hotShoclet1.jpg";
+import hotShocletMSCoffee1 from "../public/hotShocletMSCoffee1.jpg";
+import kabatshino1 from "../public/kabatshino1.jpg";
+import kabatshinoIspreso1 from "../public/kabatshinoIspreso1.jpg";
+import kafehLateh1 from "../public/kafehLateh1.jpg";
+import nscafehGoldSada1 from "../public/nscafehGoldSada1.jpg";
+import nskafehMGRED1 from "../public/nskafehMGRED1.jpg";
+import teaMsCoffee1 from "../public/teaMsCoffee1.jpg";
+import teaRED1 from "../public/teaRED1.jpg";
 import logo from "../public/logo_MrCoffe.png";
 
 const products = [
@@ -155,7 +167,7 @@ const products = [
     categorie: "hotDrink",
   },
   {
-    product: logo,
+    product: kafehLateh1,
 
     Description: "مزيج كلاسيكي من القهوة والحليب.",
     title: "كافي لاتيه",
@@ -224,7 +236,7 @@ const products = [
   },
 
   {
-    product: logo,
+    product: teaRED1,
     Description: "تحضر بعناية لأجلك",
     title: " شاي احمر",
     price: "6,000",
@@ -250,7 +262,7 @@ const products = [
     categorie: "hotDrink",
   },
   {
-    product: logo,
+    product: teaMsCoffee1,
 
     Description:
       "شاي مُحلى بالحليب بالهال والقرفة، يُقدم لك طعمًا مميزًا وغنيًا.",
@@ -266,7 +278,7 @@ const products = [
     categorie: "hotDrink",
   },
   {
-    product: logo,
+    product: blackMsCoffee,
     Description: "تحضر بعناية لأجلك",
     title: " بلاك كوفي ميلك",
     price: "10,000",
@@ -274,14 +286,14 @@ const products = [
   },
 
   {
-    product: logo,
+    product: fanelLatshino1,
     Description: "مزيج القهوة مع الحليب بنكهة الفانيل المميزة",
     title: " فانيل لاتشينو",
     price: "11,000",
     categorie: "hotDrink",
   },
   {
-    product: logo,
+    product: kabatshino1,
     Description: "تحضر بعناية لأجلك",
     title: " كابتشينو ",
     price: "9,000",
@@ -302,7 +314,7 @@ const products = [
     ],
   },
   {
-    product: logo,
+    product: kabatshinoIspreso1,
     Description: "تحضر بعناية لأجلك",
     title: " كابتشينو اسبريسو",
     price: "10,500",
@@ -339,7 +351,7 @@ const products = [
   },
 
   {
-    product: logo,
+    product: nscafehGoldSada1,
     Description: "تحضر بعناية لأجلك",
     title: " نسكافيه غولد سادة",
     price: "9,500",
@@ -361,14 +373,14 @@ const products = [
   },
 
   {
-    product: logo,
+    product: nskafehMGRED1,
     Description: "تحضر بعناية لأجلك",
     title: " نسكافيه ماغ احمر",
     price: "8,000",
     categorie: "hotDrink",
   },
   {
-    product: logo,
+    product: hotSerelakShoco1,
     Description: "تحضر بعناية لأجلك",
     title: " هوت سيريلاك شوكو",
     price: "13,500",
@@ -376,7 +388,7 @@ const products = [
   },
  
   {
-    product: logo,
+    product: hotShoclet1,
     Description: "تحضر بعناية لأجلك",
     title: " هوت شوكلت",
     price: "9,000",
@@ -405,7 +417,7 @@ const products = [
     ],
   },
   {
-    product: logo,
+    product: hotShocletMSCoffee1,
     Description: "تحضر بعناية لأجلك",
     title: " هوت شوكلت مستر كوفي",
     price: "11,500",
