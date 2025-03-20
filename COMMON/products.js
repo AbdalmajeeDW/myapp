@@ -275,7 +275,7 @@ const products = [
 
   {
     product: logo,
-    Description: "تحضر بعناية لأجلك",
+    Description: "مزيج القهوة مع الحليب بنكهة الفانيل المميزة",
     title: " فانيل لاتشينو",
     price: "11,000",
     categorie: "hotDrink",
