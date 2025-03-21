@@ -55,7 +55,7 @@ console.log(count);
               />
               </div>
               <div className="flex justify-between flex-col">
-                <div className="px-4 py-2  text-titelCard flex  items-center dark:text-darkText">
+                <div style={{display:'flex',alignItems:'center !important'}} className="px-4 py-2  text-titelCard dark:text-darkText">
                   <div className="text-nowrap font-bold  text-xl">{e.title}
                     
                   </div>
