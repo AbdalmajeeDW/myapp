@@ -48,7 +48,7 @@ console.log(count);
 
               <Image
                 src={e.product.src}
-                className={`h-72 w-full p-1 py-0 rounded-2xl object-fill`}
+                className={`h-96 w-full p-1 py-0 rounded-2xl object-fill`}
                 width={300}
                 height={50}
                 alt={e.title}
@@ -59,7 +59,7 @@ console.log(count);
                   <div className="text-nowrap font-bold  text-xl">{e.title}
                     
                   </div>
-                  <div className="px-1 flex gap-1  text-gray  dark:text-darkText">
+                  <div className="px-1 flex gap-1  text-gray items-center align- dark:text-darkText">
                     {e.price} <span className="text-shadowCard">ل.س</span>
                   </div>
                 </div>
@@ -69,7 +69,7 @@ console.log(count);
                     {e.additions.map((addition, index) => (
                       <div
                         key={index}
-                        className="text-lg text-gray dark:text-darkText mb-1 flex gap-1"
+                        className=" text-gray dark:text-darkText mb-1 flex gap-1"
                       >
                         <span className="">{addition.title}</span>:{" "}
                         {addition.price}{" "}
