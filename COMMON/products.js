@@ -213,16 +213,13 @@ const products = [
         price: "12,500",
       },
 
-      {
-        title: " 3 ب 1 نسله وحليب",
-        price: "11,500",
-      },
+    
     ],
   },
 
   {
     product: logo,
-    Description: "تحضر بعناية لأجلك",
+    Description: "مزيج الاسبريسو مع الحليب و الشوكولاتة البيضاء و الداكنة لذة لاتوصف",
     title: " اسبريسو شوكو مستر كوفي",
     price: "14,000",
     categorie: "hotDrink",
@@ -275,7 +272,7 @@ const products = [
   },
   {
     product: blackMsCoffee,
-    Description: "تحضر بعناية لأجلك",
+    Description: "مزيج النسكافيه  مع الحليب",
     title: " بلاك كوفي ميلك",
     price: "10,000",
     categorie: "hotDrink",
@@ -311,7 +308,7 @@ const products = [
   },
   {
     product: kabatshinoIspreso1,
-    Description: "تحضر بعناية لأجلك",
+    Description: "مزيج الاسبويسو مع الحليب",
     title: " كابتشينو اسبريسو",
     price: "10,500",
     categorie: "hotDrink",
@@ -414,7 +411,7 @@ const products = [
   },
   {
     product: hotShocletMSCoffee1,
-    Description: "تحضر بعناية لأجلك",
+    Description: "مزيج الحليب بالشوكولاته الداكنة و البيضاء مع نكهة القرفة المميزة",
     title: " هوت شوكلت مستر كوفي",
     price: "11,500",
     categorie: "hotDrink",

@@ -69,7 +69,7 @@ console.log(count);
                     {e.additions.map((addition, index) => (
                       <div
                         key={index}
-                        className=" text-gray dark:text-darkText mb-1 flex gap-1"
+                        className=" text-gray font-bold dark:text-darkText mb-1 flex gap-1"
                       >
                         <span className="">{addition.title}</span>:{" "}
                         {addition.price}{" "}
