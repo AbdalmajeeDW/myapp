@@ -59,7 +59,7 @@ console.log(count);
                   <div className="text-nowrap font-bold  text-xl">{e.title}
                     
                   </div>
-                  <div className="px-1 flex gap-1  text-gray items-center font-bold  dark:text-darkText">
+                  <div style={{display:'flex',alignItems:'center'}} className="px-1 flex gap-1  text-gray items-center font-bold  dark:text-darkText">
                     {e.price} <span className="text-shadowCard">ل.س</span>
                   </div>
                 </div>

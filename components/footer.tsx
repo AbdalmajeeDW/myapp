@@ -67,8 +67,8 @@ export default function Footer() {
         </div>
       </div>
       {/* Footer Tagline */}
-      <p className="text-lg font-serif text-footer mt-6 text-center dark:text-white flex justify-center items-center gap-2">
-        <TfiWorld /> Best Coffee Shop In The Entire World
+      <p className=" font-serif text-footer mt-6 text-center text-nowrap dark:text-white flex justify-center items-center gap-2">
+        <TfiWorld  size={20}/> Best Coffee Shop In The Entire World
       </p>
     </div>
   );
