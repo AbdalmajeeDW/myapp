@@ -511,13 +511,7 @@ const products = [
     categorie: "candies",
   },
 
-  {
-    product: halamscoffee_1,
-    Description: " مزيج رائع من الكراميل والقهوة والبسكويت لذّة مُميزة.",
-    title: "حلا مستر كوفي",
-    price: "18,000  ",
-    categorie: "candies",
-  },
+
 
   {
     product: cakebluebeary_1,
