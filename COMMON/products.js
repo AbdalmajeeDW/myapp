@@ -24,7 +24,7 @@ import teacrk_1 from "../public/teacrk/teacrk_1.jpg";
 import teacrk_2 from "../public/teacrk/teacrk_2.jpg";
 import teaMsCoffee_1 from "../public/teaMsCoffee/teaMsCoffee_1.jpg";
 import teaMsCoffee_2 from "../public/teaMsCoffee/teaMsCoffee_2.jpg";
-import sanSebastain_1 from "../public/sanSebastain/sanSebastain_1.jpg";
+import sanSebastain_1 from "../public/sanSebastian.jpg";
 import dispasito_1 from "../public/dispasito/dispasito_1.jpg";
 import dispasito_2 from "../public/dispasito/dispasito_2.jpg";
 import icewhitecoco_1 from "../public/icewhitecoco/1.jpg";
