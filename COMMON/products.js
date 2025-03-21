@@ -22,8 +22,8 @@ import MokaMikato_1 from "../public/MokaMikato/MokaMikato_1.jpg";
 import MokaMikato_2 from "../public/MokaMikato/MokaMikato_2.jpg";
 import teacrk_1 from "../public/teacrk/teacrk_1.jpg";
 import teacrk_2 from "../public/teacrk/teacrk_2.jpg";
-import teaMsCoffee_1 from "../public/teaMsCoffee/teaMsCoffee_1.jpg";
-import teaMsCoffee_2 from "../public/teaMsCoffee/teaMsCoffee_2.jpg";
+import chessCakeOrio from "../public/chessCakeOrio.jpg";
+import cakeDoubi from "../public/cakeDoubi.jpg";
 import sanSebastain_1 from "../public/sanSebastian.jpg";
 import dispasito_1 from "../public/dispasito/dispasito_1.jpg";
 import dispasito_2 from "../public/dispasito/dispasito_2.jpg";
@@ -38,8 +38,8 @@ import senabon_1 from "../public/senabon/senabon_1.jpg";
 import halamscoffee_1 from "../public/halamscoffee/halamscoffee_1.jpg";
 import cakebluebeary_1 from "../public/cakebluebeary/cakebluebeary_1.jpg";
 import cakeoreio_1 from "../public/cakeoreio/cakeoreio_1.jpg";
-import milkcheck_1 from "../public/milkchceckCaramil/milkcheck_1.jpg";
-import milkchecklotos_1 from "../public/milkchecklotos/milkchecklotos_1.jpg";
+import traflCake from "../public/traflCake.jpg";
+import Brounes from "../public/Brounes.jpg";
 import blackMsCoffee from "../public/blackMsCoffee1.jpg";
 import hotSerelakShoco1 from "../public/hotSerelakShoco1.jpg";
 import fanelLatshino1 from "../public/fanelLatshino1.jpg";
@@ -52,6 +52,9 @@ import nscafehGoldSada1 from "../public/nscafehGoldSada1.jpg";
 import nskafehMGRED1 from "../public/nskafehMGRED1.jpg";
 import teaMsCoffee1 from "../public/teaMsCoffee1.jpg";
 import teaRED1 from "../public/teaRED1.jpg";
+import loutosBaits from "../public/loutosBaits.jpg";
+import BestishoBaits from "../public/BestishoBaits.jpg";
+import mixBaits from "../public/mixBaits.jpg";
 import logo from "../public/logo_MrCoffe.png";
 
 const products = [
@@ -433,6 +436,20 @@ const products = [
 
   ////////candies////////
   {
+    product: cakeDoubi,
+    Description: "تحضر بعناية لأجلك",
+    title: " كيكة دبي",
+    price: "28,500",
+    categorie: "candies",
+  },
+  {
+    product: halamscoffee_1,
+    Description: " مزيج رائع من الكراميل والقهوة والبسكويت لذّة مُميزة.",
+    title: "حلا مستر كوفي",
+    price: "18,000  ",
+    categorie: "candies",
+  },
+  {
     product: sanSebastain_1,
 
     Description:
@@ -460,15 +477,30 @@ const products = [
     categorie: "candies",
   },
 
-  // {
-  //   product: sharlot_1,
-  //   Description:
-  //     " طبقات من البسكويت مع الحليب الخاص، تُضاف إليها الشوكولا لذّة مُميزة.",
-  //   title: "شارلوت",
-  //   price: "15,500  ",
-  //   categorie: "candies",
-  // additions:' ',
-  // },
+  {
+    product: loutosBaits,
+    Description: "تحضر بعناية لأجلك",
+
+    title: "لوتس بايتس",
+    price: "18,000  ",
+    categorie: "candies",
+  },
+  {
+    product: BestishoBaits,
+    Description: "تحضر بعناية لأجلك",
+
+    title: "بستاشيو بايتس",
+    price: "22,000  ",
+    categorie: "candies",
+  },
+  {
+    product: mixBaits,
+    Description: "تحضر بعناية لأجلك",
+
+    title: "مكس بايتس",
+    price: "20,000  ",
+    categorie: "candies",
+  },
 
   {
     product: senabon_1,
@@ -497,36 +529,30 @@ const products = [
   },
 
   {
-    product: cakeoreio_1,
+    product: chessCakeOrio,
     Description:
       "مزيج من الجبنة وبسكويت الاوريو المطحون، تُغطى بطبقة بسكويت لذّة مُغرية.",
-    title: " تشيز كيك اوريو كاسة",
+    title: " تشيز كيك اوريو",
     price: "20,000  ",
     categorie: "candies",
   },
 
   {
-    product: logo,
+    product: Brounes,
     Description: "تحضر بعناية لأجلك",
     title: " براونيز",
-    price: "19,500",
+    price: "20,500",
     categorie: "candies",
   },
   {
-    product: logo,
+    product: traflCake,
     Description: "تحضر بعناية لأجلك",
     title: " ترفل كيك",
     price: "19,500",
     categorie: "candies",
   },
 
-  {
-    product: logo,
-    Description: "تحضر بعناية لأجلك",
-    title: " كيكة دبي",
-    price: "28,500",
-    categorie: "candies",
-  },
+ 
 
   ////////iceDrink////////
 
