@@ -54,12 +54,12 @@ console.log(count);
                 alt={e.title}
               />
               </div>
-              <div className="flex justify-between flex-col">
-                <div style={{display:'flex',alignItems:'center !important'}} className="px-4 py-2  text-titelCard dark:text-darkText">
+              <div className="">
+                <div style={{display:'flex',alignItems:'center'}} className="px-4 py-2  text-titelCard dark:text-darkText">
                   <div className="text-nowrap font-bold  text-xl">{e.title}
                     
                   </div>
-                  <div className="px-1 flex gap-1  text-gray items-center align- dark:text-darkText">
+                  <div className="px-1 flex gap-1  text-gray items-center font-bold  dark:text-darkText">
                     {e.price} <span className="text-shadowCard">ل.س</span>
                   </div>
                 </div>
