@@ -437,7 +437,7 @@ const products = [
   ////////candies////////
   {
     product: cakeDoubi,
-    Description: "تحضر بعناية لأجلك",
+    Description: "كيكة الشوكولاته مع كريمة الفستق الحلبي و الكنافة طعم لايقاوم",
     title: " كيكة دبي",
     price: "28,500",
     categorie: "candies",
@@ -479,17 +479,17 @@ const products = [
 
   {
     product: loutosBaits,
-    Description: "تحضر بعناية لأجلك",
+    Description: "مزيج كريمة لوتس مع القشطة و الحليب و الزبدة نكهة مميزة",
 
-    title: "لوتس بايتس",
+    title: "لوتس بايتس (4 قطع)",
     price: "18,000  ",
     categorie: "candies",
   },
   {
     product: BestishoBaits,
-    Description: "تحضر بعناية لأجلك",
+    Description: "مزيج كريمة الفستق الحلبي مع القشطة و الحليب و الزبدة نكهة مميزة",
 
-    title: "بستاشيو بايتس",
+    title: "بستاشيو بايتس ( 4 قطع)",
     price: "22,000  ",
     categorie: "candies",
   },

@@ -84,7 +84,7 @@ export default function Home() {
 
             <button
               onClick={scrollToProducts}
-              className="mt-6 bg-secondryColor hover:bg-shadowCard text-white py-2 px-6 rounded-full text-lg font-medium shadow-lg transition-all hover:bg-opacity-90"
+              className="mt-6 animate-bounce bg-secondryColor hover:bg-shadowCard text-white py-2 px-6 rounded-full text-lg font-medium shadow-lg transition-all hover:bg-opacity-90"
             >
               استكشاف القائمة ☕
             </button>
@@ -136,13 +136,13 @@ export default function Home() {
           <Footer />
         </>
       ) : (
-        <div className="h-full z-40 fixed w-full bg-primaryColor flex items-center justify-center">
+        <div style={{background:'#e6a782'}} className="h-full z-40 fixed w-full  flex items-center justify-center">
           <Image
             src="/logo.png"
             alt="Splash Logo"
             width={140}
             height={140}
-            className="animate-pulse w-40 h-40 md:w-60 md:h-60"
+            className="animate-bounce w-40 h-40 md:w-60 md:h-60"
           />
         </div>
       )}
