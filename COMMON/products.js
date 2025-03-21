@@ -193,6 +193,8 @@ const products = [
     categorie: "hotDrink",
   },
 
+  
+
   ////////////////////////////////////////////////////////////////////////////////////////////////////////////////
   {
     product: logo,
@@ -423,6 +425,12 @@ const products = [
     Description: "تحضر بعناية لأجلك",
     title: " قهوة تركية دبل",
     price: "8,500",
+    categorie: "hotDrink",
+  },  {
+    product: logo,
+    Description: "تحضر بعناية لأجلك",
+    title: "قهوة مقطرة V60 ",
+    price: "12,000  ",
     categorie: "hotDrink",
   },
 
