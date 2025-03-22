@@ -65,7 +65,6 @@ console.log(count);
                 </div>
                 {e.additions && e.additions.length > 0 && (
                   <div className="px-4 mt-2">
-                    {/* <h3 className="text-lg font-semibold text-gray-700 dark:text-darkText">الإضافات:</h3> */}
                     {e.additions.map((addition, index) => (
                       <div
                         key={index}
