@@ -56,6 +56,25 @@ import loutosBaits from "../public/loutosBaits.jpg";
 import BestishoBaits from "../public/BestishoBaits.jpg";
 import mixBaits from "../public/mixBaits.jpg";
 import logo from "../public/logo_MrCoffe.png";
+import iceChoclet from "../public/iceChoclet.jpg";
+import shmam1 from "../public/shmam1.jpg";
+import sheckenWhiteMOka1 from "../public/sheckenWhiteMOka1.jpg";
+import frabtshinoNotela1 from "../public/frabtshinoNotela1.jpg";
+import iceCaffe1 from "../public/iceCaffe1.jpg";
+import iceMilo1 from "../public/iceMilo1.jpg";
+import watermelon1 from "../public/watermelon1.jpg";
+import iceMoka1 from "../public/iceMoka1.jpg";
+import iceWhiteMoka1 from "../public/iceWhiteMoka1.jpg";
+import polo1 from "../public/polo1.jpg";
+import sevenLove1 from "../public/sevenLove1.jpg";
+import frabtshinoKaramil1 from "../public/frabtshinoKaramil1.jpg";
+import iceSpaneshLateh1 from "../public/iceSpaneshLateh1.jpg";
+import icemsCoffee1 from "../public/icemsCoffee1.jpg";
+import iceWhiteMsCoffee1 from "../public/iceWhiteMsCoffee1.jpg";
+import orioFrab1 from "../public/orioFrab1.jpg";
+
+
+import ice3b1_1 from "../public/ice3b1_1.jpg";
 
 const products = [
   {
@@ -602,14 +621,14 @@ const products = [
   },
 
   {
-    product: logo,
+    product: orioFrab1,
     Description: "تحضر بعناية لأجلك",
     title: "اوريو فراب ",
     price: "25,000  ",
     categorie: "iceDrink",
   },
   {
-    product: logo,
+    product: ice3b1_1,
     Description: "تحضر بعناية لأجلك",
     title: "آيس 3 ب 1 ",
     price: "21,000  ",
@@ -637,70 +656,70 @@ const products = [
     categorie: "iceDrink",
   },
   {
-    product: logo,
+    product: iceSpaneshLateh1,
     Description: "تحضر بعناية لأجلك",
     title: " آيس سبانش لاتيه",
     price: "22,000",
     categorie: "iceDrink",
   },
   {
-    product: logo,
+    product: iceChoclet,
     Description: "تحضر بعناية لأجلك",
     title: " آيس شوكليت",
     price: "19,500",
     categorie: "iceDrink",
   },
   {
-    product: logo,
+    product: iceCaffe1,
     Description: "تحضر بعناية لأجلك",
     title: " آيس كافي",
     price: "23,000",
     categorie: "iceDrink",
   },
   {
-    product: logo,
+    product: icemsCoffee1,
     Description: "تحضر بعناية لأجلك",
     title: " آيس مستر كوفي",
     price: "23,500",
     categorie: "iceDrink",
   },
   {
-    product: logo,
+    product: iceMoka1,
     Description: "تحضر بعناية لأجلك",
     title: " آيس موكا",
     price: "21,500",
     categorie: "iceDrink",
   },
   {
-    product: logo,
+    product: iceMilo1,
     Description: "تحضر بعناية لأجلك",
     title: " آيس ميلو",
     price: "18,500",
     categorie: "iceDrink",
   },
   {
-    product: logo,
+    product: iceWhiteMsCoffee1,
     Description: "تحضر بعناية لأجلك",
     title: " آيس وايت مستر كوفي",
     price: "23,000",
     categorie: "iceDrink",
   },
   {
-    product: logo,
+    product: iceWhiteMoka1,
     Description: "تحضر بعناية لأجلك",
     title: " آيس وايت موكا",
     price: "23,500",
     categorie: "iceDrink",
   },
   {
-    product: logo,
+    product: polo1,
     Description: "تحضر بعناية لأجلك",
     title: " بولو",
     price: "19,500",
     categorie: "iceDrink",
   },
   {
-    product: logo,
+    product: sevenLove1,
     Description: "تحضر بعناية لأجلك",
     title: " سفن Love",
     price: "19,000",
@@ -728,21 +747,21 @@ const products = [
   },
 
   {
-    product: logo,
+    product: sheckenWhiteMOka1,
     Description: "تحضر بعناية لأجلك",
     title: " شيكن وايت موكا",
     price: "23,500",
     categorie: "iceDrink",
   },
   {
-    product: logo,
+    product: watermelon1,
     Description: "تحضر بعناية لأجلك",
     title: " عصير بطيخ",
     price: "19,000",
     categorie: "iceDrink",
   },
   {
-    product: logo,
+    product: shmam1,
     Description: "تحضر بعناية لأجلك",
     title: " عصير شمام",
     price: "19,000",
@@ -756,14 +775,14 @@ const products = [
     categorie: "iceDrink",
   },
   {
-    product: logo,
+    product: frabtshinoKaramil1,
     Description: "تحضر بعناية لأجلك",
     title: " فرابتشينو كراميل",
     price: "22,500",
     categorie: "iceDrink",
   },
   {
-    product: logo,
+    product: frabtshinoNotela1,
     Description: "تحضر بعناية لأجلك",
     title: " فرابتشينو نوتيلا",
     price: "24,000",

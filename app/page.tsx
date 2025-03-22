@@ -136,7 +136,7 @@ export default function Home() {
           <Footer />
         </>
       ) : (
-        <div style={{background:'#e6a782'}} className="h-full z-40 fixed w-full  flex items-center justify-center">
+        <div  className="h-full dark:bg-darkPrimaryColor bg-white z-40 fixed w-full  flex items-center justify-center">
           <Image
             src="/logo.png"
             alt="Splash Logo"
