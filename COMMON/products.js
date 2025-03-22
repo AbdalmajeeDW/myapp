@@ -56,7 +56,7 @@ import loutosBaits from "../public/loutosBaits.jpg";
 import BestishoBaits from "../public/BestishoBaits.jpg";
 import mixBaits from "../public/mixBaits.jpg";
 import logo from "../public/logo_MrCoffe.png";
-import iceChoclet from "../public/iceChoclet.jpg";
+import iceChoclet from "../public/iceChoclet1.jpg";
 import shmam1 from "../public/shmam1.jpg";
 import sheckenWhiteMOka1 from "../public/sheckenWhiteMOka1.jpg";
 import frabtshinoNotela1 from "../public/frabtshinoNotela1.jpg";
