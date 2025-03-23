@@ -928,6 +928,8 @@ const products = [
     title: " عصير شمام",
     price: "19,000",
     categorie: "iceDrink",
+    width: "auto",
+    height: "auto",
     subCategorie: "Summer",
   },
   {
@@ -946,6 +948,7 @@ const products = [
     title: " فرابتشينو كراميل",
     price: "22,500",
     categorie: "iceDrink",
+    
     subCategorie: "Coldchocolate",
   },
   {
