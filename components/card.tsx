@@ -71,15 +71,15 @@ export default function Home({ categories }: CardProps) {
             </div>
             <div className="">
               <div
-                style={{ display: "flex", alignItems: "center" }}
-                className="px-4 py-2  text-titelCard dark:text-darkText"
+               
+              className={`px-2 py-2 flex ${e.title.length>=17 ?' flex-col':'items-center'}  text-titelCard  dark:text-darkText`}
               >
-                <div className="text-nowrap font-bold font-hk  ">{e.title}</div>
+                <div className=" font-bold font-hk text-xl ">{e.title}</div>
                 <div
                   style={{ display: "flex", alignItems: "center" }}
-                  className="px-1 font-hk flex gap-1  text-gray items-center font-bold  dark:text-darkText"
+                  className="px-1 font-hk flex gap-1  text-xl text-gray items-center font-bold  dark:text-darkText"
                 >
-                  {e.price} <span className="text-shadowCard font-hk">ل.س</span>
+                  {e.price} <span className="text-shadowCard font-hk text-xl  ">ل.س</span>
                 </div>
               </div>
               {e.additions && e.additions.length > 0 && (
