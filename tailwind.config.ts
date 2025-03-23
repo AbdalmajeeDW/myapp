@@ -7,6 +7,9 @@ module.exports = {
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
+    fontFamily: {
+      hk: [ "ZainLight" ],
+  },
     colors: {
       primaryColor: "#f8f9e9",
       secondryColor: "#935332",

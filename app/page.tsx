@@ -61,15 +61,15 @@ export default function Home() {
                 className="rounded-lg object-contain animate-pulse w-40 h-40 md:w-60 md:h-60"
               />
             </div>
-            <h1 className="text-white text-3xl font-bold mt-6">
+            <h1 className="text-white text-3xl font-bold font-hk mt-6">
               مرحبًا بك في Mr. Coffee
             </h1>
-            <p className="text-white mt-2 text-lg text-center">
+            <p className="text-white mt-2 font-hk text-lg text-center">
               استكشف أصنافنا المميزة وتمتع بأفضل تجربة قهوة 🍂
             </p>
             <button
               onClick={scrollToProducts}
-              className="mt-6 animate-bounce bg-secondryColor hover:bg-shadowCard text-white py-2 px-6 rounded-full text-lg font-medium shadow-lg transition-all"
+              className="mt-6 font-hk animate-bounce bg-secondryColor hover:bg-shadowCard text-white py-2 px-6 rounded-full text-lg font-medium shadow-lg transition-all"
             >
               استكشاف القائمة ☕
             </button>
@@ -129,7 +129,7 @@ export default function Home() {
                 >
                   <IoClose size={24} />
                 </button>
-                <h3 className="text-xl font-bold text-center mb-4 dark:text-white">
+                <h3 className="text-xl font-bold text-center mb-4 font-hk dark:text-white">
                   اختر نوع المشروب البارد
                 </h3>
                 <div className="flex flex-col gap-2">
@@ -138,7 +138,7 @@ export default function Home() {
                     ?.subCategories?.map((sub) => (
                       <div
                         key={sub}
-                        className={`py-2 text-gray-800 dark:text-white cursor-pointer text-center px-6 bg-gray-100 dark:bg-gray-700 hover:bg-gray-200 dark:hover:bg-gray-600 rounded ${
+                        className={`py-2 text-gray-800 font-hk dark:text-white cursor-pointer text-center px-6 bg-gray-100 dark:bg-gray-700 hover:bg-gray-200 dark:hover:bg-gray-600 rounded ${
                           categoie === sub ? "bg-secondryColor text-white" : ""
                         }`}
                         onClick={() => {
@@ -160,7 +160,7 @@ export default function Home() {
           )}
 
           {/* عنوان القسم */}
-          <div className="px-6 pt-10 font-bold text-3xl dark:text-white text-gray flex items-center gap-2">
+          <div className="px-6 font-hk pt-10 font-bold text-3xl dark:text-white text-gray flex items-center gap-2">
           <div className="text-titelCard dark:text-white">
   {tabs.find((tab) => tab.id === categoie)?.title ||
     (categoie === "Coldchocolate"

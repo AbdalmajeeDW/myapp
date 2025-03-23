@@ -18,7 +18,7 @@ export default function Footer() {
       style={{ direction: "ltr" }}
       className="w-full px-7 bg-[#FAF7E9] dark:bg-darkPrimary dark:text-darkText shadow-black text-footer shadow-2xl font-[Poppins]"
     >
-      <div className="py-16 flex flex-row justify-between flex-wrap gap-20 text-left">
+      <div className="py-16 flex flex-row justify-between flex-wrap gap-20 font-hk font-bold text-left">
         {/* Logo and Contact */}
         <div className="flex flex-col items-start gap-4">
           <div className="flex items-center text-4xl font-serif text-footer dark:text-white">
@@ -43,8 +43,8 @@ export default function Footer() {
           <div className="flex items-center text-4xl font-serif text-footer dark:text-white">
             <AiFillProduct size={22} className="mr-2" /> Categories
           </div>
-          <ul className="space-y-2 text-gray dark:text-darkText">
-            <li className="flex items-center gap-3"><FaSnowflake size={18} /> Cold drinks</li>
+          <ul className="space-y-2 text-gray font-hk font-bold dark:text-darkText">
+            <li className="flex items-center  gap-3"><FaSnowflake size={18} /> Cold drinks</li>
             <li className="flex items-center gap-3"><FaSun size={18} /> Hot drinks</li>
             <li className="flex items-center gap-3"><FiCoffee size={18} /> Coffee</li>
             <li className="flex items-center gap-3"><FaCandyCane size={18} /> Candies</li>
@@ -53,7 +53,7 @@ export default function Footer() {
         
         {/* Location & Business Hours */}
         <div className="flex flex-col items-start gap-4">
-          <div className="flex items-center text-4xl font-serif text-footer dark:text-white">
+          <div className="flex items-center text-4xl font-hk font-bold text-footer dark:text-white">
             <FaMapMarkerAlt size={22} className="mr-2" /> Location
           </div>
           <div className="flex items-center gap-2">
@@ -67,7 +67,7 @@ export default function Footer() {
         </div>
       </div>
       {/* Footer Tagline */}
-      <p className=" font-serif text-footer mt-6 text-center text-nowrap dark:text-white flex justify-center items-center gap-2">
+      <p className=" font-hk font-bold text-footer mt-6 text-center text-nowrap dark:text-white flex justify-center items-center gap-2">
         <TfiWorld  size={20}/> Best Coffee Shop In The Entire World
       </p>
     </div>

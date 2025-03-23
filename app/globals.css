@@ -19,11 +19,15 @@
   --background: #1b0404;
   --foreground: #f1f1f1;
 }
+@font-face {
+  font-family: ZainLight;
+  src: url('../fonts/Zain-Light.ttf') ;
+}
 
 body {
   color: var(--foreground);
   background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: ZainLight !important;
   transition: background 0.3s ease, color 0.3s ease; /* ✅ تأثير ناعم عند التبديل */
 }
 

@@ -31,7 +31,7 @@ export default function Header() {
   }, [theme]); 
 
   return (
-    <header className="px-28 bg-primaryColor font-[Poppins] flex fixed z-20 flex-row items-center justify-between xs:px-4 h-20 w-full p-2 dark:bg-darkPrimary dark:text-darkText">
+    <header className="px-28 bg-primaryColor shadow-shadowCard shadow-lg font-[Poppins] flex fixed z-20 flex-row items-center justify-between xs:px-4 h-20 w-full p-2 dark:bg-darkPrimary dark:text-darkText">
       {/* زر تبديل الوضع */}
       <div className="px-5 cursor-pointer" onClick={toggleTheme}>
         {theme === "dark" ? (
@@ -44,7 +44,7 @@ export default function Header() {
       {/* لوجو التطبيق */}
       <div className="px-5 flex flex-row justify-start items-center text-fontHero dark:text-white">
         <FiCoffee size={18} />
-        <div className="px-1 text-lg font-bold font-serif">Mr.Coffee</div>
+        <div className="px-1 text-2xl font-bold  font-hk">Mr.Coffee</div>
       </div>
     </header>
   );
