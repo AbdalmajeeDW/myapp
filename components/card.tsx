@@ -54,6 +54,7 @@ export default function Home({ categories }: CardProps) {
         .map((e, i) => (
           <div
             key={i}
+            style={{boxShadow:'0 1px 7px 4px #cf7e35'}}
             className=" bg-white h-full sm:w-80 xs:w-80 md:w-72 lg:w-72 xl:w-72   py-2 shadow-xl rounded-2xl shadow-shadowCard transition duration-300 dark:bg-darkSecondary dark:text-darkFontHero"
           >
             <div className=" h-96 flex items-center justify-center">
