@@ -85,6 +85,28 @@ import mohitoNanaAndLime1 from "../public/mohitoNanaAndLime1.jpg";
 import sevenPashenFroutDraak1 from "../public/sevenPashenFroutDraak1.jpg";
 import sevenRmaanANDblue1 from "../public/sevenRmaanANDblue1.jpg";
 
+
+
+
+
+
+
+
+
+import ice6in1_1 from "../public/ice6in1_1.jpg";
+import milkCehckKaramil1 from "../public/milkCehckKaramil1.jpg";
+
+import milkCheckFanel1 from "../public/milkCheckFanel1.jpg";
+import milkCheckLoutos1 from "../public/milkCheckLoutos1.jpg";
+
+
+
+import milkCheckNewtela1 from "../public/milkCheckNewtela1.jpg";
+
+
+import milkCheckOrio1 from "../public/milkCheckOrio1.jpg";
+import milkCheckSerilak1 from "../public/milkCheckSerilak1.jpg";
+
 const products = [
   {
     product: hotMsCoffeeGold_1,
@@ -586,15 +608,7 @@ const products = [
 
   ////////iceDrink////////
 
-  {
-    product: icewhitecoco_1,
-
-    Description: " مزيج رائع بين الحليب مع نكهة جوز الهند والشوكولا البيضاء ",
-    title: "ايس وايت كوكونات ",
-    price: "23,000  ",
-    categorie: "iceDrink",
-    subCategorie: "Coldchocolate",
-  },
+ 
   {
     product: mohitoBlueBeriy1,
     
@@ -669,9 +683,8 @@ const products = [
     subCategorie: "milkCheck",
   },
   {
-    product: logo,
-    width: "auto",
-    height: "auto",
+    product: milkCheckOrio1,
+   
     Description: "تحضر بعناية لأجلك",
     title: "ميلك شيك اوريو",
     price: "22,500  ",
@@ -689,9 +702,8 @@ const products = [
     subCategorie: "milkCheck",
   },
   {
-    product: logo,
-    width: "auto",
-    height: "auto",
+    product: milkCheckSerilak1,
+    
     Description: "تحضر بعناية لأجلك",
     title: "ميلك شيك سيريلاك",
     price: "22,000  ",
@@ -699,9 +711,8 @@ const products = [
     subCategorie: "milkCheck",
   },
   {
-    product: logo,
-    width: "auto",
-    height: "auto",
+    product: milkCheckFanel1,
+    
     Description: "تحضر بعناية لأجلك",
     title: "ميلك شيك فانيل",
     price: "22,500  ",
@@ -709,9 +720,8 @@ const products = [
     subCategorie: "milkCheck",
   },
   {
-    product: logo,
-    width: "auto",
-    height: "auto",
+    product: milkCehckKaramil1,
+   
     Description: "تحضر بعناية لأجلك",
     title: "ميلك شيك كراميل",
     price: "22,000  ",
@@ -719,9 +729,8 @@ const products = [
     subCategorie: "milkCheck",
   },
   {
-    product: logo,
-    width: "auto",
-    height: "auto",
+    product: milkCheckLoutos1,
+    
     Description: "تحضر بعناية لأجلك",
     title: "ميلك شيك لوتس",
     price: "22,500  ",
@@ -729,14 +738,46 @@ const products = [
     subCategorie: "milkCheck",
   },
   {
-    product: logo,
-    width: "auto",
-    height: "auto",
+    product: milkCheckNewtela1,
+  
     Description: "تحضر بعناية لأجلك",
     title: "ميلك شيك نيوتيلا ",
     price: "22,500  ",
     categorie: "iceDrink",
     subCategorie: "milkCheck",
+  },
+  {
+    product: icemsCoffee1,
+    Description: "تحضر بعناية لأجلك",
+    title: " آيس مستر كوفي",
+    price: "23,500",
+    categorie: "iceDrink",
+    subCategorie: "Coldchocolate",
+  },
+  {
+    product: iceCaffe1,
+    Description: "تحضر بعناية لأجلك",
+    title: " آيس كافي",
+    price: "23,000",
+    categorie: "iceDrink",
+    subCategorie: "Coldchocolate",
+  },  {
+    product: frabtshinoKaramil1,
+    Description: "تحضر بعناية لأجلك",
+    title: " فرابتشينو كراميل",
+    price: "22,500",
+    categorie: "iceDrink",
+
+    subCategorie: "Coldchocolate",
+  },
+  {
+    product: icewhitecoco_1,
+
+    Description: " مزيج رائع بين الحليب مع نكهة جوز الهند والشوكولا البيضاء ",
+    title: "ايس وايت كوكونات ",
+    price: "23,000  ",
+    categorie: "iceDrink",
+    subCategorie: "Coldchocolate",
   },
 
   {
@@ -756,35 +797,16 @@ const products = [
     subCategorie: "Coldchocolate",
   },
   {
-    product: logo,
-    width: "auto",
-    height: "auto",
+    product: ice6in1_1,
+   
     Description: "تحضر بعناية لأجلك",
     title: "آيس 6 ب 1 ",
     price: "23,500  ",
     categorie: "iceDrink",
     subCategorie: "Coldchocolate",
   },
-  {
-    product: logo,
-    width: "auto",
-    height: "auto",
-    Description: "تحضر بعناية لأجلك",
-    title: "آيس اسبريسو ",
-    price: "18,000",
-    categorie: "iceDrink",
-    subCategorie: "Coldchocolate",
-  },
-  {
-    product: logo,
-    width: "auto",
-    height: "auto",
-    Description: "تحضر بعناية لأجلك",
-    title: "آيس تي بلو بيري ",
-    price: "19,000",
-    categorie: "iceDrink",
-    subCategorie: "Summer",
-  },
+
+ 
   {
     product: iceSpaneshLateh1,
     Description: "تحضر بعناية لأجلك",
@@ -801,22 +823,8 @@ const products = [
     categorie: "iceDrink",
     subCategorie: "Coldchocolate",
   },
-  {
-    product: iceCaffe1,
-    Description: "تحضر بعناية لأجلك",
-    title: " آيس كافي",
-    price: "23,000",
-    categorie: "iceDrink",
-    subCategorie: "Coldchocolate",
-  },
-  {
-    product: icemsCoffee1,
-    Description: "تحضر بعناية لأجلك",
-    title: " آيس مستر كوفي",
-    price: "23,500",
-    categorie: "iceDrink",
-    subCategorie: "Coldchocolate",
-  },
+
+
   {
     product: iceMoka1,
     Description: "تحضر بعناية لأجلك",
@@ -985,20 +993,32 @@ const products = [
     categorie: "iceDrink",
     subCategorie: "Coldchocolate",
   },
-  {
-    product: frabtshinoKaramil1,
-    Description: "تحضر بعناية لأجلك",
-    title: " فرابتشينو كراميل",
-    price: "22,500",
-    categorie: "iceDrink",
 
-    subCategorie: "Coldchocolate",
-  },
   {
     product: frabtshinoNotela1,
     Description: "تحضر بعناية لأجلك",
     title: " فرابتشينو نوتيلا",
     price: "24,000",
+    categorie: "iceDrink",
+    subCategorie: "Coldchocolate",
+  },
+  {
+    product: logo,
+    width: "auto",
+    height: "auto",
+    Description: "تحضر بعناية لأجلك",
+    title: " قهوة مقطرة باردة V60 ",
+    price: "21,000",
+    categorie: "iceDrink",
+    subCategorie: "Coldchocolate",
+  },
+  {
+    product: logo,
+    width: "auto",
+    height: "auto",
+    Description: "تحضر بعناية لأجلك",
+    title: "آيس اسبريسو ",
+    price: "18,000",
     categorie: "iceDrink",
     subCategorie: "Coldchocolate",
   },
