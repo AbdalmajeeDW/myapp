@@ -576,6 +576,8 @@ const products = [
     title: "ايس وايت كوكونات ",
     price: "23,000  ",
     categorie: "iceDrink",
+    subCategorie:'Coldchocolate'
+
   },
   {
     product: msSummer,
@@ -584,6 +586,8 @@ const products = [
     title: "مستر صيف ",
     price: "20,500  ",
     categorie: "iceDrink",
+    subCategorie:'Summer'
+
   },
   {
     product: blueSummer_2,
@@ -592,6 +596,7 @@ const products = [
     title: "بلو سمر ",
     price: "19,500  ",
     categorie: "iceDrink",
+    subCategorie:'Summer'
   },
 
   {
@@ -600,6 +605,7 @@ const products = [
     title: "ايس تي دراق ",
     price: "19,000  ",
     categorie: "iceDrink",
+    subCategorie:'Summer'
   },
 
   {
@@ -608,16 +614,71 @@ const products = [
     title: "ميلك شيك باونتي ",
     price: "22,500  ",
     categorie: "iceDrink",
-    // additions: [
-    //   { title: " ميلك شيك تراميسو", price: "24,500" },
-    //   { title: " ميلك شيك سيريلاك", price: "22,000" },
-    //   { title: " ميلك شيك فانيل", price: "20,500" },
-    //   { title: "ميلك شيك كراميل ", price: "22,000  " },
-    //   { title: "ميلك شيك لوتس ", price: "22,500  " },
+    subCategorie:'milkCheck'
 
-    //   { title: " ميلك شيك نوتيلا", price: "22,500" },
-    //   { title: " ميلك شيك اوريو", price: "22,500" },
-    // ],
+  },
+  {
+    product: logo,
+    Description: "تحضر بعناية لأجلك",
+    title: "ميلك شيك اوريو",
+    price: "22,500  ",
+    categorie: "iceDrink",
+    subCategorie:'milkCheck'
+
+  },
+  {
+    product: logo,
+    Description: "تحضر بعناية لأجلك",
+    title: "ميلك شيك تيراميسو",
+    price: "24,500  ",
+    categorie: "iceDrink",
+    subCategorie:'milkCheck'
+
+  },
+  {
+    product: logo,
+    Description: "تحضر بعناية لأجلك",
+    title: "ميلك شيك سيريلاك",
+    price: "22,000  ",
+    categorie: "iceDrink",
+    subCategorie:'milkCheck'
+
+  },
+  {
+    product: logo,
+    Description: "تحضر بعناية لأجلك",
+    title: "ميلك شيك فانيل",
+    price: "22,500  ",
+    categorie: "iceDrink",
+    subCategorie:'milkCheck'
+
+  },
+  {
+    product: logo,
+    Description: "تحضر بعناية لأجلك",
+    title: "ميلك شيك كراميل",
+    price: "22,000  ",
+    categorie: "iceDrink",
+    subCategorie:'milkCheck'
+
+  },
+  {
+    product: logo,
+    Description: "تحضر بعناية لأجلك",
+    title: "ميلك شيك لوتس",
+    price: "22,500  ",
+    categorie: "iceDrink",
+    subCategorie:'milkCheck'
+
+  },
+  {
+    product: logo,
+    Description: "تحضر بعناية لأجلك",
+    title: "ميلك شيك نيوتيلا ",
+    price: "22,500  ",
+    categorie: "iceDrink",
+    subCategorie:'milkCheck'
+
   },
 
   {
@@ -626,6 +687,7 @@ const products = [
     title: "اوريو فراب ",
     price: "25,000  ",
     categorie: "iceDrink",
+    subCategorie:'Coldchocolate'
   },
   {
     product: ice3b1_1,
@@ -633,6 +695,8 @@ const products = [
     title: "آيس 3 ب 1 ",
     price: "21,000  ",
     categorie: "iceDrink",
+    subCategorie:'Coldchocolate'
+
   },
   {
     product: logo,
@@ -640,6 +704,8 @@ const products = [
     title: "آيس 6 ب 1 ",
     price: "23,500  ",
     categorie: "iceDrink",
+    subCategorie:'Coldchocolate'
+
   },
   {
     product: logo,
@@ -647,6 +713,8 @@ const products = [
     title: "آيس اسبريسو ",
     price: "18,000",
     categorie: "iceDrink",
+    subCategorie:'Coldchocolate'
+
   },
   {
     product: logo,
@@ -654,6 +722,8 @@ const products = [
     title: "آيس تي بلو بيري ",
     price: "19,000",
     categorie: "iceDrink",
+    subCategorie:'Summer'
+
   },
   {
     product: iceSpaneshLateh1,
@@ -661,6 +731,8 @@ const products = [
     title: " آيس سبانش لاتيه",
     price: "22,000",
     categorie: "iceDrink",
+    subCategorie:'Coldchocolate'
+
   },
   {
     product: iceChoclet,
@@ -668,6 +740,8 @@ const products = [
     title: " آيس شوكليت",
     price: "19,500",
     categorie: "iceDrink",
+    subCategorie:'Coldchocolate'
+
   },
   {
     product: iceCaffe1,
@@ -675,6 +749,8 @@ const products = [
     title: " آيس كافي",
     price: "23,000",
     categorie: "iceDrink",
+    subCategorie:'Coldchocolate'
+
   },
   {
     product: icemsCoffee1,
@@ -682,6 +758,8 @@ const products = [
     title: " آيس مستر كوفي",
     price: "23,500",
     categorie: "iceDrink",
+    subCategorie:'Coldchocolate'
+
   },
   {
     product: iceMoka1,
@@ -689,6 +767,8 @@ const products = [
     title: " آيس موكا",
     price: "21,500",
     categorie: "iceDrink",
+    subCategorie:'Coldchocolate'
+
   },
   {
     product: iceMilo1,
@@ -696,6 +776,8 @@ const products = [
     title: " آيس ميلو",
     price: "18,500",
     categorie: "iceDrink",
+    subCategorie:'Coldchocolate'
+
   },
   {
     product: iceWhiteMsCoffee1,
@@ -703,6 +785,8 @@ const products = [
     title: " آيس وايت مستر كوفي",
     price: "23,000",
     categorie: "iceDrink",
+    subCategorie:'Coldchocolate'
+
   },
   {
     product: iceWhiteMoka1,
@@ -710,6 +794,8 @@ const products = [
     title: " آيس وايت موكا",
     price: "23,500",
     categorie: "iceDrink",
+    subCategorie:'Coldchocolate'
+
   },
   {
     product: polo1,
@@ -717,6 +803,8 @@ const products = [
     title: " بولو",
     price: "19,500",
     categorie: "iceDrink",
+    subCategorie:'Summer'
+
   },
   {
     product: sevenLove1,
@@ -724,27 +812,98 @@ const products = [
     title: " سفن Love",
     price: "19,000",
     categorie: "iceDrink",
-    // additions: [
-    //   { title: " سفن باشن فروت", price: "19,000" },
-    //   { title: " سفن بلو", price: "19,000" },
-    //   { title: " سفن توريو", price: "20,500" },
+    subCategorie:'Summer'
 
-    //   { title: "سفن رمان وبلو", price: "19,000" },
-
-    //   { title: "سفن غراندن", price: "19,000" },
-
-    //   { title: "سفن غليتر بلو", price: "21,000" },
-
-    //   { title: "سفن غليتر بلو غراندن", price: "21,000" },
-
-    //   { title: " سفن غليتر غراندن", price: "21,000" },
-
-    //   { title: " سفن غليتر لوف", price: "21,000" },
-
-    //   { title: " سفن كاندي", price: "19,000" },
-    //   { title: " سفن ليمون ونعنع", price: "19,000" },
-    // ],
   },
+  {
+    product: logo,
+    Description: "تحضر بعناية لأجلك",
+   title: " سفن باشن فروت", price: "19,000",
+    categorie: "iceDrink",
+    subCategorie:'Summer'
+
+  },
+  {
+    product: logo,
+    Description: "تحضر بعناية لأجلك",
+    title: " سفن بلو", price: "19,000",
+    categorie: "iceDrink",
+    subCategorie:'Summer'
+
+  },
+  {
+    product: logo,
+    Description: "تحضر بعناية لأجلك",
+    title: " سفن توريو", price: "20,500" ,
+    categorie: "iceDrink",
+    subCategorie:'Summer'
+
+  },
+  {
+    product: logo,
+    Description: "تحضر بعناية لأجلك",
+    title: "سفن رمان وبلو", price: "19,000" ,
+    categorie: "iceDrink",
+    subCategorie:'Summer'
+
+  },
+  {
+    product: logo,
+    Description: "تحضر بعناية لأجلك",
+    title: "سفن غراندن", price: "19,000" ,
+    categorie: "iceDrink",
+    subCategorie:'Summer'
+
+  },
+  {
+    product: logo,
+    Description: "تحضر بعناية لأجلك",
+    title: "سفن غليتر بلو", price: "21,000" ,
+    categorie: "iceDrink",
+    subCategorie:'Summer'
+
+  },
+  {
+    product: logo,
+    Description: "تحضر بعناية لأجلك",
+    title: "سفن غليتر بلو غراندن", price: "21,000"  ,
+    categorie: "iceDrink",
+    subCategorie:'Summer'
+
+  },
+  {
+    product: logo,
+    Description: "تحضر بعناية لأجلك",
+    title: " سفن غليتر غراندن", price: "21,000"   ,
+    categorie: "iceDrink",
+    subCategorie:'Summer'
+
+  },
+  {
+    product: logo,
+    Description: "تحضر بعناية لأجلك",
+    title: " سفن غليتر لوف", price: "21,000"   ,
+    categorie: "iceDrink",
+    subCategorie:'Summer'
+
+  },
+  {
+    product: logo,
+    Description: "تحضر بعناية لأجلك",
+    title: " سفن كاندي", price: "19,000"   ,
+    categorie: "iceDrink",
+    subCategorie:'Summer'
+
+  },
+  {
+    product: logo,
+    Description: "تحضر بعناية لأجلك",
+    title: " سفن ليمون ونعنع", price: "19,000"   ,
+    categorie: "iceDrink",
+    subCategorie:'Summer'
+
+  },
+ 
 
   {
     product: sheckenWhiteMOka1,
@@ -752,6 +911,8 @@ const products = [
     title: " شيكن وايت موكا",
     price: "23,500",
     categorie: "iceDrink",
+    subCategorie:'Coldchocolate'
+
   },
   {
     product: watermelon1,
@@ -759,6 +920,8 @@ const products = [
     title: " عصير بطيخ",
     price: "19,000",
     categorie: "iceDrink",
+    subCategorie:'Summer'
+
   },
   {
     product: shmam1,
@@ -766,6 +929,8 @@ const products = [
     title: " عصير شمام",
     price: "19,000",
     categorie: "iceDrink",
+    subCategorie:'Summer'
+
   },
   {
     product: logo,
@@ -773,6 +938,8 @@ const products = [
     title: " فانيل فراب",
     price: "21,500",
     categorie: "iceDrink",
+    subCategorie:'Coldchocolate'
+
   },
   {
     product: frabtshinoKaramil1,
@@ -780,6 +947,8 @@ const products = [
     title: " فرابتشينو كراميل",
     price: "22,500",
     categorie: "iceDrink",
+    subCategorie:'Coldchocolate'
+
   },
   {
     product: frabtshinoNotela1,
@@ -787,6 +956,8 @@ const products = [
     title: " فرابتشينو نوتيلا",
     price: "24,000",
     categorie: "iceDrink",
+    subCategorie:'Coldchocolate'
+
   },
   {
     product: logo,
@@ -794,13 +965,49 @@ const products = [
     title: " موهيتو بلو",
     price: "19,500",
     categorie: "iceDrink",
-    // additions: [
-    //   { title: "موهيتو بلو بيري ", price: "19,500" },
-    //   { title: "موهيتو دراق ", price: "19,500" },
-    //   { title: "موهيتو غراندن ", price: "19,500" },
-    //   { title: "موهيتو لوف ", price: "19,500" },
-    //   { title: "موهيتو نعنع ", price: "19,500" },
-    // ],
+    subCategorie:'Summer'
+
   },
+  {
+    product: logo,
+    Description: "تحضر بعناية لأجلك",
+    title: "موهيتو بلو بيري ", price: "19,500",
+    categorie: "iceDrink",
+    subCategorie:'Summer'
+
+  },
+  {
+    product: logo,
+    Description: "تحضر بعناية لأجلك",
+    title: "موهيتو دراق ", price: "19,500",
+    categorie: "iceDrink",
+    subCategorie:'Summer'
+
+  },
+  {
+    product: logo,
+    Description: "تحضر بعناية لأجلك",
+    title: "موهيتو غراندن ", price: "19,500",
+    categorie: "iceDrink",
+    subCategorie:'Summer'
+
+  },
+  {
+    product: logo,
+    Description: "تحضر بعناية لأجلك",
+    title: "موهيتو لوف ", price: "19,500",
+    categorie: "iceDrink",
+    subCategorie:'Summer'
+
+  },
+  {
+    product: logo,
+    Description: "تحضر بعناية لأجلك",
+    title: "موهيتو نعنع ", price: "19,500",
+    categorie: "iceDrink",
+    subCategorie:'Summer'
+
+  },
+
 ];
 export default { products };
