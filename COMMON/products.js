@@ -75,6 +75,16 @@ import orioFrab1 from "../public/orioFrab1.jpg";
 
 import ice3b1_1 from "../public/ice3b1_1.jpg";
 
+import gleter1 from "../public/gleter1.jpg";
+import mohitoBlueBeriy1 from "../public/mohitoBlueBeriy1.jpg";
+import mohitoDraak1 from "../public/mohitoDraak1.jpg";
+import mohitoLove1 from "../public/mohitoLove1.jpg";
+import mohitoNanaAndLime1 from "../public/mohitoNanaAndLime1.jpg";
+
+
+import sevenPashenFroutDraak1 from "../public/sevenPashenFroutDraak1.jpg";
+import sevenRmaanANDblue1 from "../public/sevenRmaanANDblue1.jpg";
+
 const products = [
   {
     product: hotMsCoffeeGold_1,
@@ -586,6 +596,43 @@ const products = [
     subCategorie: "Coldchocolate",
   },
   {
+    product: mohitoBlueBeriy1,
+    
+    Description: "تحضر بعناية لأجلك",
+    title: "موهيتو بلو بيري وليمون",
+    price: "19,500",
+    categorie: "iceDrink",
+    subCategorie: "Summer",
+  },
+  {
+    product: mohitoDraak1,
+    
+    Description: "تحضر بعناية لأجلك",
+    title: "موهيتو دراق ",
+    price: "19,500",
+    categorie: "iceDrink",
+    subCategorie: "Summer",
+  },
+
+  {
+    product: mohitoLove1,
+   
+    Description: "تحضر بعناية لأجلك",
+    title: "موهيتو لوف ",
+    price: "19,500",
+    categorie: "iceDrink",
+    subCategorie: "Summer",
+  },
+  {
+    product: mohitoNanaAndLime1,
+    
+    Description: "تحضر بعناية لأجلك",
+    title: "موهيتو نعنع وليمون   ",
+    price: "19,500",
+    categorie: "iceDrink",
+    subCategorie: "Summer",
+  },
+  {
     product: msSummer,
     Description:
       " بوظة الحليب مع نكهة الدراق والليموناضة، الانتعاش المثالي في يوم حار. ",
@@ -819,9 +866,8 @@ const products = [
     subCategorie: "Summer",
   },
   {
-    product: logo,
-    width: "auto",
-    height: "auto",
+    product: sevenPashenFroutDraak1,
+   
     Description: "تحضر بعناية لأجلك",
     title: " سفن باشن فروت (دراق)",
     price: "19,000",
@@ -849,7 +895,7 @@ const products = [
     subCategorie: "Summer",
   },
   {
-    product: logo,
+    product: sevenRmaanANDblue1,
     width: "auto",
     height: "auto",
     Description: "تحضر بعناية لأجلك",
@@ -860,7 +906,7 @@ const products = [
   },
 
   {
-    product: logo,
+    product: gleter1,
     width: "auto",
     height: "auto",
     Description: "تحضر بعناية لأجلك",
@@ -928,8 +974,7 @@ const products = [
     title: " عصير شمام",
     price: "19,000",
     categorie: "iceDrink",
-    width: "auto",
-    height: "auto",
+    
     subCategorie: "Summer",
   },
   {
@@ -948,7 +993,7 @@ const products = [
     title: " فرابتشينو كراميل",
     price: "22,500",
     categorie: "iceDrink",
-    
+
     subCategorie: "Coldchocolate",
   },
   {
@@ -969,46 +1014,6 @@ const products = [
     categorie: "iceDrink",
     subCategorie: "Summer",
   },
-  {
-    product: logo,
-    width: "auto",
-    height: "auto",
-    Description: "تحضر بعناية لأجلك",
-    title: "موهيتو بلو بيري وليمون",
-    price: "19,500",
-    categorie: "iceDrink",
-    subCategorie: "Summer",
-  },
-  {
-    product: logo,
-    width: "auto",
-    height: "auto",
-    Description: "تحضر بعناية لأجلك",
-    title: "موهيتو دراق ",
-    price: "19,500",
-    categorie: "iceDrink",
-    subCategorie: "Summer",
-  },
-
-  {
-    product: logo,
-    width: "auto",
-    height: "auto",
-    Description: "تحضر بعناية لأجلك",
-    title: "موهيتو لوف ",
-    price: "19,500",
-    categorie: "iceDrink",
-    subCategorie: "Summer",
-  },
-  {
-    product: logo,
-    width: "auto",
-    height: "auto",
-    Description: "تحضر بعناية لأجلك",
-    title: "موهيتو نعنع ",
-    price: "19,500",
-    categorie: "iceDrink",
-    subCategorie: "Summer",
-  },
+ 
 ];
 export default { products };
