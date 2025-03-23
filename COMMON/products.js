@@ -896,8 +896,7 @@ const products = [
   },
   {
     product: sevenRmaanANDblue1,
-    width: "auto",
-    height: "auto",
+   
     Description: "تحضر بعناية لأجلك",
     title: "سفن رمان وبلو",
     price: "19,000",
@@ -907,8 +906,7 @@ const products = [
 
   {
     product: gleter1,
-    width: "auto",
-    height: "auto",
+
     Description: "تحضر بعناية لأجلك",
     title: "سفن غليتر بلو",
     price: "21,000",
