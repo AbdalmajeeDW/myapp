@@ -180,7 +180,11 @@ export default function Home() {
 
           <Footer />
         </>
-      ) : null}
+      ) : (
+        <div className="h-full dark:bg-darkPrimaryColor bg-white z-40 fixed w-full flex items-center justify-center">
+          <Image src="/logo.png" alt="Splash Logo" width={140} height={140} className="animate-bounce w-40 h-40 md:w-60 md:h-60" />
+        </div>
+      )}
     </div>
   );
 }
