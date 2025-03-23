@@ -72,7 +72,7 @@ export default function Home({ categories }: CardProps) {
             <div className="">
               <div
                
-              className={`px-2 py-2 flex ${e.title.length>=17 ?' flex-col':'items-center'}  text-titelCard  dark:text-darkText`}
+              className={`px-2 py-2 flex ${e.title.length>=20 ?' flex-col':'items-center'}  text-titelCard  dark:text-darkText`}
               >
                 <div className=" font-bold font-hk text-xl ">{e.title}</div>
                 <div
@@ -83,7 +83,7 @@ export default function Home({ categories }: CardProps) {
                 </div>
               </div>
               {e.additions && e.additions.length > 0 && (
-                <div className="px-4 mt-2">
+                <div className="px-2 mt-2">
                   {e.additions.map((addition, index) => (
                     <div
                       key={index}
@@ -96,7 +96,7 @@ export default function Home({ categories }: CardProps) {
                   ))}
                 </div>
               )}
-              <div className="px-4 font-hk py-2 text-lg text-gray dark:text-darkText">
+              <div className="px-2 font-hk py-2 text-lg text-gray dark:text-darkText">
                 {e.Description}
               </div>
             </div>

@@ -45,6 +45,8 @@ export default function Home() {
 
   const scrollToProducts = () => {
     productsRef.current?.scrollIntoView({ behavior: "smooth" });
+    console.log(productsRef.current);
+    
   };
 
   return (
@@ -75,7 +77,6 @@ export default function Home() {
             </button>
           </div>
 
-          {/* زر الصعود للأعلى */}
           <div
             className={`cursor-pointer w-8 h-8 right-3 bg-titelCard dark:bg-white dark:text-darkPrimaryColor flex items-center fixed bottom-44 justify-center z-50 rounded-lg shadow-lg text-white ${
               showNav ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
@@ -86,7 +87,6 @@ export default function Home() {
             </a>
           </div>
 
-          {/* قائمة الأصناف */}
           <div
             className={`fixed bottom-5 left-1/2 z-50 transform -translate-x-1/2 transition-all duration-500 pb-3 ${
               showNav ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
@@ -103,11 +103,13 @@ export default function Home() {
                         setActiveTab(tab.id);
                         setCategoie(tab.id);
                         setShowSubmenu(false);
+                        
                       }
                     }}
                     className={`p-3 rounded-full cursor-pointer transition-all ${
                       activeTab === tab.id ||
-                      (tab.id === "iceDrink" && tab.subCategories?.includes(categoie))
+                      (tab.id === "iceDrink" &&
+                        tab.subCategories?.includes(categoie))
                         ? "bg-secondryColor text-white shadow-md"
                         : "text-gray dark:text-white hover:text-shadowCard"
                     }`}
@@ -119,7 +121,6 @@ export default function Home() {
             </div>
           </div>
 
-          {/* قائمة الفئات الفرعية */}
           {showSubmenu && (
             <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 z-50">
               <div className="bg-white dark:bg-darkPrimaryColor shadow-xl p-6 rounded-lg relative w-80">
@@ -132,7 +133,7 @@ export default function Home() {
                 <h3 className="text-xl font-bold text-center mb-4 font-hk dark:text-white">
                   اختر نوع المشروب البارد
                 </h3>
-                <div className="flex flex-col gap-2">
+                <div className="flex flex-col gap-2 font-hk font-bold">
                   {tabs
                     .find((tab) => tab.id === "iceDrink")
                     ?.subCategories?.map((sub) => (
@@ -161,14 +162,14 @@ export default function Home() {
 
           {/* عنوان القسم */}
           <div className="px-6 font-hk pt-10 font-bold text-3xl dark:text-white text-gray flex items-center gap-2">
-          <div className="text-titelCard dark:text-white">
-  {tabs.find((tab) => tab.id === categoie)?.title ||
-    (categoie === "Coldchocolate"
-      ? "القهوة والشوكولاتة الباردة"
-      : categoie === "milkCheck"
-      ? "ميلك شيك"
-      : "صيفية ومنعشة")}
-</div>
+            <div className="text-titelCard dark:text-white">
+              {tabs.find((tab) => tab.id === categoie)?.title ||
+                (categoie === "Coldchocolate"
+                  ? "القهوة والشوكولاتة الباردة"
+                  : categoie === "milkCheck"
+                  ? "ميلك شيك"
+                  : "صيفية ومنعشة")}
+            </div>
 
             <div className="text-shadowCard pb-1 dark:text-white">
               {tabs.find((tab) => tab.id === activeTab)?.icon}
@@ -184,7 +185,13 @@ export default function Home() {
         </>
       ) : (
         <div className="h-full dark:bg-darkPrimaryColor bg-white z-40 fixed w-full flex items-center justify-center">
-          <Image src="/logo.png" alt="Splash Logo" width={140} height={140} className="animate-bounce w-40 h-40 md:w-60 md:h-60" />
+          <Image
+            src="/logo.png"
+            alt="Splash Logo"
+            width={140}
+            height={140}
+            className="animate-bounce w-40 h-40 md:w-60 md:h-60"
+          />
         </div>
       )}
     </div>
