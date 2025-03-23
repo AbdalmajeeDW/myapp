@@ -161,13 +161,15 @@ export default function Home() {
 
           {/* عنوان القسم */}
           <div className="px-6 pt-10 font-bold text-3xl dark:text-white text-gray flex items-center gap-2">
-            <div className="text-titelCard dark:text-white">
-              {tabs.find((tab) => tab.id === categoie)?.title || categoie === "Coldchocolate"
-                          ? "قهوة باردة"
-                          : categoie === "milkCheck"
-                          ? "ميلك شيك"
-                          : "مشروب صيفي"}
-            </div>
+          <div className="text-titelCard dark:text-white">
+  {tabs.find((tab) => tab.id === categoie)?.title ||
+    (categoie === "Coldchocolate"
+      ? "قهوة باردة"
+      : categoie === "milkCheck"
+      ? "ميلك شيك"
+      : "مشروب صيفي")}
+</div>
+
             <div className="text-shadowCard pb-1 dark:text-white">
               {tabs.find((tab) => tab.id === activeTab)?.icon}
             </div>
