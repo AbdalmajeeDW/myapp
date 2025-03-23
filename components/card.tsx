@@ -25,8 +25,18 @@ export default function Home({ categories }: CardProps) {
 
   useEffect(() => {
     setCategorie(categories);
-    setCount(products.products);
   }, [categories]);
+  
+  useEffect(() => {
+    setCount(
+      products.products.filter(
+        (product) =>
+          product.categorie === categorie ||
+          product.subCategorie === categorie ||
+          categorie === "home"
+      )
+    );
+  }, [categorie]);
 
   return (
     <div className="md:grid md:grid-cols-2 xl:grid xl:grid-cols-4 lg:grid xs:w-full lg:grid-cols-3 sm:grid sm:grid-cols-1 sm:gap-14 xs:grid xs:justify-items-center xs:grid-cols-1 gap-4 px-10 my-5 dark:bg-darkPrimary">
