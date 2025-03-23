@@ -22,12 +22,17 @@ interface CardProps {
 export default function Home({ categories }: CardProps) {
   const [count, setCount] = useState<Product[]>([]);
   const [categorie, setCategorie] = useState(categories || "home");
+  console.log(categorie,'cat');
+  
 
   useEffect(() => {
-    setCategorie(categories);
+    if (categories !== categorie) {
+      setCategorie(categories);
+    }
   }, [categories]);
   
   useEffect(() => {
+    console.log("🔵 تحديث المنتجات بناءً على الفئة:", categorie);
     setCount(
       products.products.filter(
         (product) =>
@@ -53,7 +58,8 @@ export default function Home({ categories }: CardProps) {
             className=" bg-white h-full sm:w-80 xs:w-80 md:w-72 lg:w-72 xl:w-72   py-2 shadow-xl rounded-2xl shadow-shadowCard transition duration-300 dark:bg-darkSecondary dark:text-darkFontHero"
           >
             <div className=" h-96 flex items-center justify-center">
-              <Image
+              <img
+              key={`${e.product.src}-${categorie}`}
                 src={e.product.src}
                 className={`${
                   e.height ? `h-auto` : `h-96`
