@@ -148,10 +148,10 @@ export default function Home() {
                         }}
                       >
                         {sub === "Coldchocolate"
-                          ? "قهوة باردة"
+                          ? "القهوة والشوكولاتة الباردة"
                           : sub === "milkCheck"
                           ? "ميلك شيك"
-                          : "مشروب صيفي"}
+                          : "صيفية ومنعشة"}
                       </div>
                     ))}
                 </div>
@@ -164,10 +164,10 @@ export default function Home() {
           <div className="text-titelCard dark:text-white">
   {tabs.find((tab) => tab.id === categoie)?.title ||
     (categoie === "Coldchocolate"
-      ? "قهوة باردة"
+      ? "القهوة والشوكولاتة الباردة"
       : categoie === "milkCheck"
       ? "ميلك شيك"
-      : "مشروب صيفي")}
+      : "صيفية ومنعشة")}
 </div>
 
             <div className="text-shadowCard pb-1 dark:text-white">

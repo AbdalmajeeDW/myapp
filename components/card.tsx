@@ -32,7 +32,6 @@ export default function Home({ categories }: CardProps) {
   }, [categories]);
   
   useEffect(() => {
-    console.log("🔵 تحديث المنتجات بناءً على الفئة:", categorie);
     setCount(
       products.products.filter(
         (product) =>
