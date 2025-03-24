@@ -97,9 +97,9 @@ export default function Home() {
               showNav ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
             }`}
           >
-            <a href="#hero_section">
-              <MdKeyboardDoubleArrowUp size={20} />
-            </a>
+            
+              <MdKeyboardDoubleArrowUp size={20} onClick={()=>scrollToSection("hero_section")} />
+          
           </div>
 
           <div
