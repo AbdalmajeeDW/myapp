@@ -17,6 +17,10 @@ export default function Home() {
   const productsRef = useRef<HTMLDivElement | null>(null);
   const [splash, setSplash] = useState<boolean>(true);
 
+  const scrollToSection = (id: string) => {
+    const element = document.getElementById(id);
+    element?.scrollIntoView({ behavior: "smooth" });
+  };
   useEffect(() => {
     setTimeout(() => {
       setSplash(false);
@@ -43,12 +47,6 @@ export default function Home() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  const scrollToProducts = () => {
-    productsRef.current?.scrollIntoView({ behavior: "smooth" });
-    console.log(productsRef.current);
-    
-  };
-
   return (
     <div className="h-screen bg-gradient-to-br from-[#2E2E2E] dark:from-[#8c5c3e] to-fontHero font-[Poppins]">
       {splash === false ? (
@@ -70,19 +68,36 @@ export default function Home() {
               استكشف أصنافنا المميزة وتمتع بأفضل تجربة قهوة 🍂
             </p>
             <button
-              onClick={scrollToProducts}
+              onClick={() => {
+                scrollToSection("title_menu");
+              }}
               className="mt-6 font-hk animate-bounce bg-secondryColor hover:bg-shadowCard text-white py-2 px-6 rounded-full text-lg font-medium shadow-lg transition-all"
             >
               استكشاف القائمة ☕
             </button>
+            <div id="title_menu"></div>
           </div>
+          {/* عنوان القسم */}
+          <div className="px-6 font-hk pt-10 font-bold text-3xl dark:text-white text-gray flex items-center gap-2">
+            <div className="text-titelCard dark:text-white">
+              {tabs.find((tab) => tab.id === categoie)?.title ||
+                (categoie === "Coldchocolate"
+                  ? "القهوة والشوكولاتة الباردة"
+                  : categoie === "milkCheck"
+                  ? "ميلك شيك"
+                  : "صيفية ومنعشة")}
+            </div>
 
+            <div className="text-shadowCard pb-1 dark:text-white">
+              {tabs.find((tab) => tab.id === activeTab)?.icon}
+            </div>
+          </div>
           <div
             className={`cursor-pointer w-8 h-8 right-3 bg-titelCard dark:bg-white dark:text-darkPrimaryColor flex items-center fixed bottom-44 justify-center z-50 rounded-lg shadow-lg text-white ${
               showNav ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
             }`}
           >
-            <a href="#">
+            <a href="#test">
               <MdKeyboardDoubleArrowUp size={20} />
             </a>
           </div>
@@ -99,11 +114,12 @@ export default function Home() {
                     onClick={() => {
                       if (tab.id === "iceDrink") {
                         setShowSubmenu(true);
+                        scrollToSection("test");
                       } else {
                         setActiveTab(tab.id);
                         setCategoie(tab.id);
                         setShowSubmenu(false);
-                        
+                        scrollToSection("title_menu");
                       }
                     }}
                     className={`p-3 rounded-full cursor-pointer transition-all ${
@@ -146,6 +162,7 @@ export default function Home() {
                           setCategoie(sub);
                           setActiveTab("iceDrink");
                           setShowSubmenu(false);
+                          scrollToSection("title_menu");
                         }}
                       >
                         {sub === "Coldchocolate"
@@ -159,22 +176,6 @@ export default function Home() {
               </div>
             </div>
           )}
-
-          {/* عنوان القسم */}
-          <div className="px-6 font-hk pt-10 font-bold text-3xl dark:text-white text-gray flex items-center gap-2">
-            <div className="text-titelCard dark:text-white">
-              {tabs.find((tab) => tab.id === categoie)?.title ||
-                (categoie === "Coldchocolate"
-                  ? "القهوة والشوكولاتة الباردة"
-                  : categoie === "milkCheck"
-                  ? "ميلك شيك"
-                  : "صيفية ومنعشة")}
-            </div>
-
-            <div className="text-shadowCard pb-1 dark:text-white">
-              {tabs.find((tab) => tab.id === activeTab)?.icon}
-            </div>
-          </div>
 
           {/* عرض الأصناف */}
           <div ref={productsRef} className="mt-10 mb-10">
