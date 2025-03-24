@@ -51,7 +51,7 @@ export default function Home() {
     <div className="h-screen bg-gradient-to-br from-[#2E2E2E] dark:from-[#8c5c3e] to-fontHero font-[Poppins]">
       {splash === false ? (
         <>
-          <div className="flex flex-col items-center justify-center h-screen">
+          <div id="hero_section" className=" flex flex-col items-center justify-center h-screen">
             <div className="relative w-52 h-52 bg-white/10 backdrop-blur-lg p-2 rounded-3xl shadow-inner flex items-center justify-center border border-white/20">
               <Image
                 alt="Mr.Coffee Logo"
@@ -97,7 +97,7 @@ export default function Home() {
               showNav ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
             }`}
           >
-            <a href="#test">
+            <a href="#hero_section">
               <MdKeyboardDoubleArrowUp size={20} />
             </a>
           </div>
