@@ -52,9 +52,6 @@ import nscafehGoldSada1 from "../public/nscafehGoldSada1.jpg";
 import nskafehMGRED1 from "../public/nskafehMGRED1.jpg";
 import teaMsCoffee1 from "../public/teaMsCoffee1.jpg";
 import teaRED1 from "../public/teaRED1.jpg";
-import loutosBaits from "../public/loutosBaits.jpg";
-import BestishoBaits from "../public/BestishoBaits.jpg";
-import mixBaits from "../public/mixBaits.jpg";
 import logo from "../public/logo_MrCoffe.png";
 import iceChoclet from "../public/iceChoclet1.jpg";
 import shmam1 from "../public/shmam1.jpg";
@@ -542,31 +539,7 @@ const products = [
     categorie: "candies",
   },
 
-  {
-    product: loutosBaits,
-    Description: "مزيج كريمة لوتس مع القشطة و الحليب و الزبدة نكهة مميزة",
 
-    title: "لوتس بايتس (4 قطع)",
-    price: "18,000  ",
-    categorie: "candies",
-  },
-  {
-    product: BestishoBaits,
-    Description:
-      "مزيج كريمة الفستق الحلبي مع القشطة و الحليب و الزبدة نكهة مميزة",
-
-    title: "بستاشيو بايتس ( 4 قطع)",
-    price: "22,000  ",
-    categorie: "candies",
-  },
-  {
-    product: mixBaits,
-    Description: "تحضر بعناية لأجلك",
-
-    title: "مكس بايتس",
-    price: "20,000  ",
-    categorie: "candies",
-  },
 
   {
     product: senabon_1,
@@ -868,7 +841,15 @@ const products = [
     price: "19,500",
     categorie: "iceDrink",
     subCategorie: "Summer",
+    additions: [
+      {
+        title: " بولو رمان",
+        price: "20,500",
+      },
+   
+    ],
   },
+
   {
     product: sevenLove1,
     Description: "تحضر بعناية لأجلك",
