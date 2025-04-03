@@ -48,143 +48,143 @@ export default function Home() {
   }, []);
 
   return (
-    <div className="h-screen bg-gradient-to-br from-[#2E2E2E] dark:from-[#8c5c3e] to-fontHero font-[Poppins]">
-      {splash === false ? (
-        <>
-          <div id="hero_section" className=" flex flex-col items-center justify-center h-screen">
-            <div className="relative w-52 h-52 bg-white/10 backdrop-blur-lg p-2 rounded-3xl shadow-inner flex items-center justify-center border border-white/20">
-              <Image
-                alt="Mr.Coffee Logo"
-                width={140}
-                height={140}
-                src="/logo.png"
-                className="rounded-lg object-contain animate-pulse w-40 h-40 md:w-60 md:h-60"
-              />
-            </div>
-            <h1 className="text-white text-3xl font-bold font-hk mt-6">
-              مرحبًا بك في Mr. Coffee
-            </h1>
-            <p className="text-white mt-2 font-hk text-lg text-center">
-              استكشف أصنافنا المميزة وتمتع بأفضل تجربة قهوة 🍂
-            </p>
-            <button
-              onClick={() => {
-                scrollToSection("title_menu");
-              }}
-              className="mt-6 font-hk animate-bounce bg-secondryColor hover:bg-shadowCard text-white py-2 px-6 rounded-full text-lg font-medium shadow-lg transition-all"
-            >
-              استكشاف القائمة ☕
-            </button>
-            <div id="title_menu"></div>
-          </div>
-          {/* عنوان القسم */}
-          <div className="px-6 font-hk pt-10 font-bold text-3xl dark:text-white text-gray flex items-center gap-2">
-            <div className="text-titelCard dark:text-white">
-              {tabs.find((tab) => tab.id === categoie)?.title ||
-                (categoie === "Coldchocolate"
-                  ? "القهوة والشوكولاتة الباردة"
-                  : categoie === "milkCheck"
-                  ? "ميلك شيك"
-                  : "صيفية ومنعشة")}
-            </div>
+    // <div className="h-screen bg-gradient-to-br from-[#2E2E2E] dark:from-[#8c5c3e] to-fontHero font-[Poppins]">
+    //   {splash === false ? (
+        // <>
+        //   <div id="hero_section" className=" flex flex-col items-center justify-center h-screen">
+        //     <div className="relative w-52 h-52 bg-white/10 backdrop-blur-lg p-2 rounded-3xl shadow-inner flex items-center justify-center border border-white/20">
+        //       <Image
+        //         alt="Mr.Coffee Logo"
+        //         width={140}
+        //         height={140}
+        //         src="/logo.png"
+        //         className="rounded-lg object-contain animate-pulse w-40 h-40 md:w-60 md:h-60"
+        //       />
+        //     </div>
+        //     <h1 className="text-white text-3xl font-bold font-hk mt-6">
+        //       مرحبًا بك في Mr. Coffee
+        //     </h1>
+        //     <p className="text-white mt-2 font-hk text-lg text-center">
+        //       استكشف أصنافنا المميزة وتمتع بأفضل تجربة قهوة 🍂
+        //     </p>
+        //     <button
+        //       onClick={() => {
+        //         scrollToSection("title_menu");
+        //       }}
+        //       className="mt-6 font-hk animate-bounce bg-secondryColor hover:bg-shadowCard text-white py-2 px-6 rounded-full text-lg font-medium shadow-lg transition-all"
+        //     >
+        //       استكشاف القائمة ☕
+        //     </button>
+        //     <div id="title_menu"></div>
+        //   </div>
+        //   {/* عنوان القسم */}
+        //   <div className="px-6 font-hk pt-10 font-bold text-3xl dark:text-white text-gray flex items-center gap-2">
+        //     <div className="text-titelCard dark:text-white">
+        //       {tabs.find((tab) => tab.id === categoie)?.title ||
+        //         (categoie === "Coldchocolate"
+        //           ? "القهوة والشوكولاتة الباردة"
+        //           : categoie === "milkCheck"
+        //           ? "ميلك شيك"
+        //           : "صيفية ومنعشة")}
+        //     </div>
 
-            <div className="text-shadowCard pb-1 dark:text-white">
-              {tabs.find((tab) => tab.id === activeTab)?.icon}
-            </div>
-          </div>
-          <div
-            className={`cursor-pointer w-8 h-8 right-3 bg-titelCard dark:bg-white dark:text-darkPrimaryColor flex items-center fixed bottom-44 justify-center z-50 rounded-lg shadow-lg text-white ${
-              showNav ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
-            }`}
-          >
+        //     <div className="text-shadowCard pb-1 dark:text-white">
+        //       {tabs.find((tab) => tab.id === activeTab)?.icon}
+        //     </div>
+        //   </div>
+        //   <div
+        //     className={`cursor-pointer w-8 h-8 right-3 bg-titelCard dark:bg-white dark:text-darkPrimaryColor flex items-center fixed bottom-44 justify-center z-50 rounded-lg shadow-lg text-white ${
+        //       showNav ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
+        //     }`}
+        //   >
             
-              <MdKeyboardDoubleArrowUp size={20} onClick={()=>scrollToSection("hero_section")} />
+        //       <MdKeyboardDoubleArrowUp size={20} onClick={()=>scrollToSection("hero_section")} />
           
-          </div>
+        //   </div>
 
-          <div
-            className={`fixed bottom-5 left-1/2 z-50 transform -translate-x-1/2 transition-all duration-500 pb-3 ${
-              showNav ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
-            }`}
-          >
-            <div className="flex relative items-center gap-4 px-4 dark:bg-darkPrimary bg-white shadow-lg rounded-full p-1 border border-white/10">
-              {tabs.map((tab) => (
-                <div key={tab.id} className="relative">
-                  <div
-                    onClick={() => {
-                      if (tab.id === "iceDrink") {
-                        setShowSubmenu(true);
-                        scrollToSection("test");
-                      } else {
-                        setActiveTab(tab.id);
-                        setCategoie(tab.id);
-                        setShowSubmenu(false);
-                        scrollToSection("title_menu");
-                      }
-                    }}
-                    className={`p-3 rounded-full cursor-pointer transition-all ${
-                      activeTab === tab.id ||
-                      (tab.id === "iceDrink" &&
-                        tab.subCategories?.includes(categoie))
-                        ? "bg-secondryColor text-white shadow-md"
-                        : "text-gray dark:text-white hover:text-shadowCard"
-                    }`}
-                  >
-                    {tab.icon}
-                  </div>
-                </div>
-              ))}
-            </div>
-          </div>
+        //   <div
+        //     className={`fixed bottom-5 left-1/2 z-50 transform -translate-x-1/2 transition-all duration-500 pb-3 ${
+        //       showNav ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
+        //     }`}
+        //   >
+        //     <div className="flex relative items-center gap-4 px-4 dark:bg-darkPrimary bg-white shadow-lg rounded-full p-1 border border-white/10">
+        //       {tabs.map((tab) => (
+        //         <div key={tab.id} className="relative">
+        //           <div
+        //             onClick={() => {
+        //               if (tab.id === "iceDrink") {
+        //                 setShowSubmenu(true);
+        //                 scrollToSection("test");
+        //               } else {
+        //                 setActiveTab(tab.id);
+        //                 setCategoie(tab.id);
+        //                 setShowSubmenu(false);
+        //                 scrollToSection("title_menu");
+        //               }
+        //             }}
+        //             className={`p-3 rounded-full cursor-pointer transition-all ${
+        //               activeTab === tab.id ||
+        //               (tab.id === "iceDrink" &&
+        //                 tab.subCategories?.includes(categoie))
+        //                 ? "bg-secondryColor text-white shadow-md"
+        //                 : "text-gray dark:text-white hover:text-shadowCard"
+        //             }`}
+        //           >
+        //             {tab.icon}
+        //           </div>
+        //         </div>
+        //       ))}
+        //     </div>
+        //   </div>
 
-          {showSubmenu && (
-            <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 z-50">
-              <div className="bg-white dark:bg-darkPrimaryColor shadow-xl p-6 rounded-lg relative w-80">
-                <button
-                  onClick={() => setShowSubmenu(false)}
-                  className="absolute top-2 left-2 text-gray-600 dark:text-white hover:text-red-500"
-                >
-                  <IoClose size={24} />
-                </button>
-                <h3 className="text-xl font-bold text-center mb-4 font-hk dark:text-white">
-                  اختر نوع المشروب البارد
-                </h3>
-                <div className="flex flex-col gap-2 font-hk font-bold">
-                  {tabs
-                    .find((tab) => tab.id === "iceDrink")
-                    ?.subCategories?.map((sub) => (
-                      <div
-                        key={sub}
-                        className={`py-2 text-gray-800 font-hk dark:text-white cursor-pointer text-center px-6 bg-gray-100 dark:bg-gray-700 hover:bg-gray-200 dark:hover:bg-gray-600 rounded ${
-                          categoie === sub ? "bg-secondryColor text-white" : ""
-                        }`}
-                        onClick={() => {
-                          setCategoie(sub);
-                          setActiveTab("iceDrink");
-                          setShowSubmenu(false);
-                          scrollToSection("title_menu");
-                        }}
-                      >
-                        {sub === "Coldchocolate"
-                          ? "القهوة والشوكولاتة الباردة"
-                          : sub === "milkCheck"
-                          ? "ميلك شيك"
-                          : "صيفية ومنعشة"}
-                      </div>
-                    ))}
-                </div>
-              </div>
-            </div>
-          )}
+        //   {showSubmenu && (
+        //     <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 z-50">
+        //       <div className="bg-white dark:bg-darkPrimaryColor shadow-xl p-6 rounded-lg relative w-80">
+        //         <button
+        //           onClick={() => setShowSubmenu(false)}
+        //           className="absolute top-2 left-2 text-gray-600 dark:text-white hover:text-red-500"
+        //         >
+        //           <IoClose size={24} />
+        //         </button>
+        //         <h3 className="text-xl font-bold text-center mb-4 font-hk dark:text-white">
+        //           اختر نوع المشروب البارد
+        //         </h3>
+        //         <div className="flex flex-col gap-2 font-hk font-bold">
+        //           {tabs
+        //             .find((tab) => tab.id === "iceDrink")
+        //             ?.subCategories?.map((sub) => (
+        //               <div
+        //                 key={sub}
+        //                 className={`py-2 text-gray-800 font-hk dark:text-white cursor-pointer text-center px-6 bg-gray-100 dark:bg-gray-700 hover:bg-gray-200 dark:hover:bg-gray-600 rounded ${
+        //                   categoie === sub ? "bg-secondryColor text-white" : ""
+        //                 }`}
+        //                 onClick={() => {
+        //                   setCategoie(sub);
+        //                   setActiveTab("iceDrink");
+        //                   setShowSubmenu(false);
+        //                   scrollToSection("title_menu");
+        //                 }}
+        //               >
+        //                 {sub === "Coldchocolate"
+        //                   ? "القهوة والشوكولاتة الباردة"
+        //                   : sub === "milkCheck"
+        //                   ? "ميلك شيك"
+        //                   : "صيفية ومنعشة"}
+        //               </div>
+        //             ))}
+        //         </div>
+        //       </div>
+        //     </div>
+        //   )}
 
-          {/* عرض الأصناف */}
-          <div ref={productsRef} className="mt-10 mb-10">
-            <Card categories={categoie} />
-          </div>
+        //   {/* عرض الأصناف */}
+        //   <div ref={productsRef} className="mt-10 mb-10">
+        //     <Card categories={categoie} />
+        //   </div>
 
-          <Footer />
-        </>
-      ) : (
+        //   <Footer />
+        // </>
+      // ) : (
         <div className="h-full dark:bg-darkPrimaryColor bg-white z-40 fixed w-full flex items-center justify-center">
           <Image
             src="/logo.png"
@@ -194,7 +194,7 @@ export default function Home() {
             className="animate-bounce w-40 h-40 md:w-60 md:h-60"
           />
         </div>
-      )}
-    </div>
+      // )}
+    // </div>
   );
 }
