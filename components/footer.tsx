@@ -32,9 +32,15 @@ export default function Footer() {
               <FaInstagram className="text-[#E1306C] text-3xl cursor-pointer dark:text-white" />
             </a>
           </div>
-          <div className="flex items-center gap-2 text-2xl text-gray dark:text-darkText">
+          <div className="flex items-center gap-2 text-xl text-gray dark:text-darkText">
             <MdCall size={22} className="text-footer dark:text-white" />
-            0941802602
+            Br 1 : 0941802602
+
+          </div>
+           <div className="flex items-center gap-2 text-xl text-gray dark:text-darkText">
+            <MdCall size={22} className="text-footer dark:text-white" />
+            Br 2 : 0941802605
+
           </div>
         </div>
         
@@ -56,9 +62,9 @@ export default function Footer() {
           <div className="flex items-center text-4xl font-hk font-bold text-footer dark:text-white">
             <FaMapMarkerAlt size={22} className="mr-2" /> Location
           </div>
-          <div className="flex items-center gap-2">
-            <FaMapMarkerAlt className="text-footer dark:text-white" />
-            <span className="text-gray dark:text-darkText">Syria, Homs, Al Ghouta Main Street</span>
+          <div className="flex items-start flex-col gap-2">
+            <span className="text-gray dark:text-darkText">Br 1 : Syria, Homs, Alghouta Main Street </span>
+            <span className="text-gray dark:text-darkText">Br 2 : Syria, Homs, Alhadara Al_Eishaq Street </span>
           </div>
           <div className="flex items-center gap-2">
             <FaBusinessTime className="text-footer dark:text-white" />

@@ -110,12 +110,12 @@ const products = [
     Description:
       "لذة كلاسيكية من قهوة فريدة تُحلى بالحليب، تُقدم لك طعمًا دافئًا ومُرضيًا.",
     title: "هوت مستر كوفي غولد",
-    price: "14,000  ",
+    price: "14,500  ",
     categorie: "hotDrink",
     additions: [
       {
         title: " هوت مستر كوفي شوكو",
-        price: "14,500",
+        price: "15,000",
       },
 
       {
@@ -129,21 +129,21 @@ const products = [
     product: _3in1_2,
     title: "3 ب 1 ",
     Description: "مزيج كلاسيكي من قهوة ٣ب١ والحليب، تُقدم لك طعمًا لذيذاً.",
-    price: `8,000  `,
+    price: `8,500  `,
 
     categorie: "hotDrink",
     additions: [
       {
         title: " 3 ب 1 مع الحليب",
-        price: "10,000",
+        price: "10,500",
       },
       {
         title: " 3 ب 1 مع نسله",
-        price: "10,000",
+        price: "10,500",
       },
       {
         title: " 3 ب 1 نسله وحليب",
-        price: "11,500",
+        price: "12,000",
       },
     ],
   },
@@ -163,7 +163,7 @@ const products = [
     Description:
       "قهوة مميزة بنكهة النعناع المنعش والشوكولا الغنية، تُقدم لك تجربة منعشة.",
     title: "هوت افتر 8",
-    price: "12,000  ",
+    price: "12,500  ",
     categorie: "hotDrink",
   },
   {
@@ -171,7 +171,7 @@ const products = [
     Description:
       "مزيج مُميز من القهوة والحليب ونكهة الموكا المُنعشة، تُحلى بالشوكولا البيضاء الفاخرة، لتُقدم لك تجربة مُميزة ومُرضية.",
     title: "هوت وايت موكا",
-    price: "12,500  ",
+    price: "13,000  ",
     categorie: "hotDrink",
   },
   {
@@ -180,7 +180,7 @@ const products = [
     Description:
       "مزيج ناعم من الحليب مع نكهة الشوكولا البيضاء، تُقدم لكِ حلاوة ناعمة تُرضي ذوقكِ.",
     title: "هوت وايت شوكلت",
-    price: "11,500  ",
+    price: "12,000  ",
     categorie: "hotDrink",
   },
   {
@@ -188,7 +188,7 @@ const products = [
     product: hotSpanchlateh_2,
     Description: "قهوة مُحلاة بالحليب، تُقدم لك طعمًا كلاسيكيًا مُرضيًا.",
     title: "هوت سبانش لاتيه",
-    price: "13,500  ",
+    price: "14,000  ",
     categorie: "hotDrink",
   },
   {
@@ -197,7 +197,7 @@ const products = [
     Description:
       "قهوة فريدة تُحلى بالحليب مُمزوجة بالشوكولا البيضاء، تُقدم لك تجربة مميزة وفاخرة.",
     title: "هوت وايت مستر كوفي",
-    price: "14,500  ",
+    price: "15,000  ",
     categorie: "hotDrink",
   },
   {
@@ -205,7 +205,7 @@ const products = [
     product: HotLotos_2,
     Description: "كريمة اللوتس تُقدم لك حلاوة غنية تُرضي ذوقك.",
     title: "هوت لوتس",
-    price: "12,500  ",
+    price: "13,000  ",
     categorie: "hotDrink",
   },
   {
@@ -213,7 +213,7 @@ const products = [
     product: chocoLoto_2,
     Description: "كريمة اللوتس بنكهة الشوكولا تُقدم لك حلاوة مُميزة وغنية.",
     title: "شوكو لوتس",
-    price: "12,000  ",
+    price: "12,500  ",
     categorie: "hotDrink",
   },
   {
@@ -230,7 +230,7 @@ const products = [
     Description:
       " قهوة تُحلى بالحليب بنكهة الكراميل، تُقدم لك حلاوة مُميزة تُرضي ذوقك.",
     title: "كراميل ميكاتو",
-    price: "11,500  ",
+    price: "12,000  ",
     categorie: "hotDrink",
   },
   {
@@ -239,7 +239,7 @@ const products = [
     Description:
       " مزيج من القهوة والحليب بنكهة الموكا، تُقدم لكِ لذة مُنعشة تُرضي ذوقك.",
     title: "موكا ماكياتو",
-    price: "13,000  ",
+    price: "13,500  ",
     categorie: "hotDrink",
   },
 
@@ -250,17 +250,17 @@ const products = [
     height: "auto",
     Description: "تحضر بعناية لأجلك",
     title: " اسبريسو دبل",
-    price: "8,500",
+    price: "9,000",
     categorie: "hotDrink",
     additions: [
       {
         title: " اسبريسو مع كافي ميت",
-        price: "12,000",
+        price: "12,500",
       },
 
       {
         title: " اسبريسو نسله دبل",
-        price: "12,500",
+        price: "13,000",
       },
     ],
   },
@@ -272,7 +272,7 @@ const products = [
     Description:
       "مزيج الاسبريسو مع الحليب و الشوكولاتة البيضاء و الداكنة لذة لاتوصف",
     title: " اسبريسو شوكو مستر كوفي",
-    price: "14,000",
+    price: "14,500",
     categorie: "hotDrink",
   },
 
@@ -280,12 +280,12 @@ const products = [
     product: teaRED1,
     Description: "تحضر بعناية لأجلك",
     title: " شاي احمر",
-    price: "6,000",
+    price: "6,500",
     categorie: "hotDrink",
     additions: [
       {
         title: " شاي بالقرفة ",
-        price: "7,000",
+        price: "7,500",
       },
       {
         title: " شاي حليب",
@@ -299,7 +299,7 @@ const products = [
     Description:
       "شاي مُحلى بالحليب بالهال والقرفة، يُقدم لك طعمًا مميزًا وغنيًا.",
     title: "شاي كرك",
-    price: "14,000  ",
+    price: "14,500  ",
     categorie: "hotDrink",
   },
   {
@@ -318,14 +318,14 @@ const products = [
 
     Description: "تحضر بعناية لأجلك",
     title: " اميركان كوفي",
-    price: "9,500",
+    price: "10,000",
     categorie: "hotDrink",
   },
   {
     product: blackMsCoffee,
     Description: "مزيج النسكافيه  مع الحليب",
     title: " بلاك كوفي ميلك",
-    price: "10,000",
+    price: "10,500",
     categorie: "hotDrink",
   },
 
@@ -333,27 +333,27 @@ const products = [
     product: fanelLatshino1,
     Description: "مزيج القهوة مع الحليب بنكهة الفانيل المميزة",
     title: " فانيل لاتشينو",
-    price: "11,000",
+    price: "11,500",
     categorie: "hotDrink",
   },
   {
     product: kabatshino1,
     Description: "تحضر بعناية لأجلك",
     title: " كابتشينو ",
-    price: "9,000",
+    price: "9,500",
     categorie: "hotDrink",
     additions: [
       {
         title: " كابتشينو  مع حليب",
-        price: "11,000",
+        price: "11,500",
       },
       {
         title: " كابتشينو  مع نسله و حليب",
-        price: "12,500",
+        price: "13,000",
       },
       {
         title: " كابتشينو  مع نسله",
-        price: "11,000",
+        price: "11,500",
       },
     ],
   },
@@ -361,7 +361,7 @@ const products = [
     product: kabatshinoIspreso1,
     Description: "مزيج الاسبويسو مع الحليب",
     title: " كابتشينو اسبريسو",
-    price: "10,500",
+    price: "11,000",
     categorie: "hotDrink",
   },
   {
@@ -370,16 +370,16 @@ const products = [
     height: "auto",
     Description: "تحضر بعناية لأجلك",
     title: " ميلو",
-    price: "8,000",
+    price: "8,500",
     categorie: "hotDrink",
     additions: [
       {
         title: " ميلو حليب ونسله",
-        price: "11,500",
+        price: "12,000",
       },
       {
         title: " ميلو وحليب",
-        price: "10,500",
+        price: "11,000",
       },
       {
         title: " ميلو ونسله",
@@ -397,15 +397,15 @@ const products = [
     additions: [
       {
         title: " نسكافيه غولد مع كافي ميت",
-        price: "12,000",
+        price: "12,500",
       },
       {
         title: " نسكافيه غولد مع نسله",
-        price: "12,000",
+        price: "12,500",
       },
       {
         title: " نسكافيه غولد مع حليب",
-        price: "12,000",
+        price: "12,500",
       },
     ],
   },
@@ -429,7 +429,7 @@ const products = [
     product: hotShoclet1,
     Description: "تحضر بعناية لأجلك",
     title: " هوت شوكلت",
-    price: "9,000",
+    price: "9,500",
     categorie: "hotDrink",
     additions: [
       {
@@ -438,23 +438,23 @@ const products = [
       },
       {
         title: " هوت شوكلت فانيل",
-        price: "11,500",
+        price: "12,000",
       },
       {
         title: " هوت شوكلت مالتيزرز",
-        price: "11,500",
+        price: "12,000",
       },
       {
         title: " هوت شوكلت نسله",
-        price: "11,500",
+        price: "12,000",
       },
       {
         title: " هوت شوكلت نوتيلا",
-        price: "11,500",
+        price: "12,000",
       },
       {
         title: "هوت شوكليت مارشميلو",
-        price: "11,500",
+        price: "12,000",
       },
     ],
   },
@@ -473,7 +473,7 @@ const products = [
     height: "auto",
     Description: "تحضر بعناية لأجلك",
     title: " قهوة تركية دبل",
-    price: "8,500",
+    price: "9,000",
     categorie: "hotDrink",
   },
   {
@@ -482,7 +482,7 @@ const products = [
     height: "auto",
     Description: "تحضر بعناية لأجلك",
     title: "قهوة مقطرة V60 ",
-    price: "12,000  ",
+    price: "11,500  ",
     categorie: "hotDrink",
   },
 
@@ -563,6 +563,15 @@ const products = [
     Description: "تحضر بعناية لأجلك",
     title: " براونيز",
     price: "20,500",
+    categorie: "candies",
+  },
+  {
+    product: logo,
+    Description: "تحضر بعناية لأجلك",
+    title: " كوكيز",
+    price: "14,000",
+    width: "auto",
+    height: "auto",
     categorie: "candies",
   },
   {
@@ -1004,6 +1013,86 @@ const products = [
     Description: "تحضر بعناية لأجلك",
     title: " موهيتو بلو",
     price: "20,500",
+    categorie: "iceDrink",
+    subCategorie: "Summer",
+  },
+  {
+    product: logo,
+    width: "auto",
+    height: "auto",
+    Description: "تحضر بعناية لأجلك",
+    title: " ميلك شيك دبي",
+    price: "23,500",
+    categorie: "iceDrink",
+    subCategorie: "Coldchocolate",
+  },
+    {
+    product: logo,
+    width: "auto",
+    height: "auto",
+    Description: "تحضر بعناية لأجلك",
+    title: " ايس كراميل لاتيه",
+    price: "23,000",
+    categorie: "iceDrink",
+    subCategorie: "Coldchocolate",
+  },
+  {
+    product: logo,
+    width: "auto",
+    height: "auto",
+    Description: "تحضر بعناية لأجلك",
+    title: " ميلك شيك فريز",
+    price: "23,500",
+    categorie: "iceDrink",
+    subCategorie: "Coldchocolate",
+  },
+   {
+    product: logo,
+    width: "auto",
+    height: "auto",
+    Description: "تحضر بعناية لأجلك",
+    title: " ميلك شيك فريز",
+    price: "23,500",
+    categorie: "iceDrink",
+    subCategorie: "Coldchocolate",
+  },
+     {
+    product: logo,
+    width: "auto",
+    height: "auto",
+    Description: "تحضر بعناية لأجلك",
+    title: " فرابتشينو موكا",
+    price: "23,500",
+    categorie: "iceDrink",
+    subCategorie: "Coldchocolate",
+  },
+    {
+    product: logo,
+    width: "auto",
+    height: "auto",
+    Description: "تحضر بعناية لأجلك",
+    title: " ﻣﻮﻫﻴﺘﻮ ﻓﺮﻳﺰ",
+    price: "20,500",
+    categorie: "iceDrink",
+    subCategorie: "Summer",
+  },
+   {
+    product: logo,
+    width: "auto",
+    height: "auto",
+    Description: "تحضر بعناية لأجلك",
+    title: " ايس اميركانو",
+    price: "19,000",
+    categorie: "iceDrink",
+    subCategorie: "Summer",
+  },
+     {
+    product: logo,
+    width: "auto",
+    height: "auto",
+    Description: "تحضر بعناية لأجلك",
+    title: " ايس كركديه",
+    price: "18,000",
     categorie: "iceDrink",
     subCategorie: "Summer",
   },
