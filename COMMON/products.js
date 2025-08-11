@@ -722,6 +722,26 @@ const products = [
     categorie: "iceDrink",
     subCategorie: "milkCheck",
   },
+   {
+    product: logo,
+    width: "auto",
+    height: "auto",
+    Description: "تحضر بعناية لأجلك",
+    title: " ميلك شيك فريز",
+    price: "23,500",
+    categorie: "iceDrink",
+    subCategorie: "milkCheck",
+  },
+   {
+    product: logo,
+    width: "auto",
+    height: "auto",
+    Description: "تحضر بعناية لأجلك",
+    title: " ميلك شيك دبي",
+    price: "23,500",
+    categorie: "iceDrink",
+    subCategorie: "milkCheck",
+  },
   {
     product: icemsCoffee1,
     Description: "تحضر بعناية لأجلك",
@@ -996,6 +1016,16 @@ const products = [
     categorie: "iceDrink",
     subCategorie: "Coldchocolate",
   },
+    {
+    product: logo,
+    width: "auto",
+    height: "auto",
+    Description: "تحضر بعناية لأجلك",
+    title: " ايس اميركانو",
+    price: "19,000",
+    categorie: "iceDrink",
+    subCategorie: "Coldchocolate",
+  },
   {
     product: logo,
     width: "auto",
@@ -1016,16 +1046,7 @@ const products = [
     categorie: "iceDrink",
     subCategorie: "Summer",
   },
-  {
-    product: logo,
-    width: "auto",
-    height: "auto",
-    Description: "تحضر بعناية لأجلك",
-    title: " ميلك شيك دبي",
-    price: "23,500",
-    categorie: "iceDrink",
-    subCategorie: "Coldchocolate",
-  },
+ 
     {
     product: logo,
     width: "auto",
@@ -1036,26 +1057,8 @@ const products = [
     categorie: "iceDrink",
     subCategorie: "Coldchocolate",
   },
-  {
-    product: logo,
-    width: "auto",
-    height: "auto",
-    Description: "تحضر بعناية لأجلك",
-    title: " ميلك شيك فريز",
-    price: "23,500",
-    categorie: "iceDrink",
-    subCategorie: "Coldchocolate",
-  },
-   {
-    product: logo,
-    width: "auto",
-    height: "auto",
-    Description: "تحضر بعناية لأجلك",
-    title: " ميلك شيك فريز",
-    price: "23,500",
-    categorie: "iceDrink",
-    subCategorie: "Coldchocolate",
-  },
+ 
+ 
      {
     product: logo,
     width: "auto",
@@ -1076,16 +1079,7 @@ const products = [
     categorie: "iceDrink",
     subCategorie: "Summer",
   },
-   {
-    product: logo,
-    width: "auto",
-    height: "auto",
-    Description: "تحضر بعناية لأجلك",
-    title: " ايس اميركانو",
-    price: "19,000",
-    categorie: "iceDrink",
-    subCategorie: "Summer",
-  },
+ 
      {
     product: logo,
     width: "auto",
