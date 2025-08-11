@@ -364,16 +364,6 @@ const products = [
     price: "10,500",
     categorie: "hotDrink",
   },
-
-  {
-    product: logo,
-    width: "auto",
-    height: "auto",
-    Description: "تحضر بعناية لأجلك",
-    title: " لاتيه لوتس",
-    price: "11,000",
-    categorie: "hotDrink",
-  },
   {
     product: logo,
     width: "auto",
