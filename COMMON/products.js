@@ -120,7 +120,7 @@ const products = [
 
       {
         title: " هوت مستر كوفي كوكونات",
-        price: "14,500",
+        price: "15,000",
       },
     ],
   },
@@ -153,7 +153,7 @@ const products = [
     Description:
       "مزيج مُميز من القهوة المُحلاة بالحليب ونكهة الشوكولا، تُقدم لك لذة لا تُقاوم.",
     title: "6 ب 1",
-    price: "14,000  ",
+    price: "14,500  ",
     categorie: "hotDrink",
   },
 
@@ -221,7 +221,7 @@ const products = [
 
     Description: "مزيج كلاسيكي من القهوة والحليب.",
     title: "كافي لاتيه",
-    price: "12,000  ",
+    price: "12,500  ",
     categorie: "hotDrink",
   },
   {
@@ -289,7 +289,7 @@ const products = [
       },
       {
         title: " شاي حليب",
-        price: "8,000",
+        price: "8,500",
       },
     ],
   },
@@ -383,7 +383,7 @@ const products = [
       },
       {
         title: " ميلو ونسله",
-        price: "9,500",
+        price: "10,000",
       },
     ],
   },
@@ -414,14 +414,14 @@ const products = [
     product: nskafehMGRED1,
     Description: "تحضر بعناية لأجلك",
     title: " نسكافيه ماغ احمر",
-    price: "8,000",
+    price: "8,500",
     categorie: "hotDrink",
   },
   {
     product: hotSerelakShoco1,
     Description: "تحضر بعناية لأجلك",
     title: " هوت سيريلاك شوكو",
-    price: "13,500",
+    price: "14,000",
     categorie: "hotDrink",
   },
 
@@ -434,7 +434,7 @@ const products = [
     additions: [
       {
         title: " هوت شوكلت سويس مس",
-        price: "11,500",
+        price: "12,000",
       },
       {
         title: " هوت شوكلت فانيل",
@@ -463,7 +463,7 @@ const products = [
     Description:
       "مزيج الحليب بالشوكولاته الداكنة و البيضاء مع نكهة القرفة المميزة",
     title: " هوت شوكلت مستر كوفي",
-    price: "11,500",
+    price: "12,000",
     categorie: "hotDrink",
   },
 
@@ -911,7 +911,7 @@ const products = [
    
     Description: "تحضر بعناية لأجلك",
     title: "سفن رمان وبلو",
-    price: "19,000",
+    price: "20,000",
     categorie: "iceDrink",
     subCategorie: "Summer",
   },
@@ -921,7 +921,7 @@ const products = [
 
     Description: "تحضر بعناية لأجلك",
     title: "سفن غليتر بلو",
-    price: "21,000",
+    price: "22,000",
     categorie: "iceDrink",
     subCategorie: "Summer",
     additions: [
@@ -931,7 +931,7 @@ const products = [
       },
       {
         title: " سفن غليتر غراندن",
-        price: "20,000",
+        price: "22,000",
       },
       {
         title: " سفن غليتر لوف",
@@ -982,7 +982,7 @@ const products = [
     product: shmam1,
     Description: "تحضر بعناية لأجلك",
     title: " عصير شمام",
-    price: "19,000",
+    price: "19,500",
     categorie: "iceDrink",
     
     subCategorie: "Summer",
