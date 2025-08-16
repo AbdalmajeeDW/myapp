@@ -304,9 +304,8 @@ const products = [
   },
   {
     product: teaMsCoffee1,
-
     Description:
-      "شاي مُحلى بالحليب بالهال والقرفة، يُقدم لك طعمًا مميزًا وغنيًا.",
+      "شاي مُحلى بالحليب , يُقدم لك طعمًا مميزًا وغنيًا.",
     title: "شاي مستر كوفي",
     price: "10,000  ",
     categorie: "hotDrink",
